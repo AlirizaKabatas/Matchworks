@@ -1,0 +1,127 @@
+﻿{
+    "Version": 1,
+    "Id": "level_006",
+    "DisplayTitle": "Taslak 6 — Donmuş Yağ",
+    "IsDraft": false,
+    "Width": 8,
+    "Height": 8,
+    "Moves": 14,
+    "ColorCount": 5,
+    "SpawnSeed": 576789,
+    "ChapterMachineId": "prototype",
+    "MotorRotated": false,
+    "Cells": [
+        {
+            "X": 3,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 0,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 0,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        }
+    ]
+}

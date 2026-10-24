@@ -1,0 +1,15 @@
+{
+  "result": "Succeeded",
+  "errors": 0,
+  "warnings": 346,
+  "warning_note": "Unity AI inference compute variants and WebGL toolchain warnings; no build errors.",
+  "development": false,
+  "threads": false,
+  "compression": "gzip with decompression fallback",
+  "files": 17,
+  "unpacked_bytes": 141557335,
+  "zip_bytes": 141018265,
+  "sha256": "2b50251c8892da331d359f71e28d5e0e02f677447a9f43741659f9120882ab4e",
+  "source_checks": 1345,
+  "browser_runtime_test": "User will perform current itch.io smoke test; no agent visual gameplay test."
+}

@@ -1,0 +1,143 @@
+﻿{
+    "Version": 1,
+    "Id": "level_007",
+    "DisplayTitle": "Taslak 7 — Donmuş Yağ ve Civata",
+    "IsDraft": false,
+    "Width": 8,
+    "Height": 8,
+    "Moves": 23,
+    "ColorCount": 5,
+    "SpawnSeed": 30092026,
+    "ChapterMachineId": "prototype",
+    "MotorRotated": false,
+    "Cells": [
+        {
+            "X": 0,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 5,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 5,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 7,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 7,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        }
+    ]
+}

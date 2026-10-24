@@ -1,0 +1,14 @@
+﻿{
+    "Version": 1,
+    "Id": "level_001",
+    "DisplayTitle": "T06 Mekanik Taslağı",
+    "IsDraft": false,
+    "Width": 8,
+    "Height": 8,
+    "Moves": 10,
+    "ColorCount": 5,
+    "SpawnSeed": 24092026,
+    "ChapterMachineId": "prototype",
+    "MotorRotated": false,
+    "Cells": []
+}

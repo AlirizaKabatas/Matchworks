@@ -1,0 +1,39 @@
+﻿{
+    "Version": 1,
+    "Id": "level_003",
+    "DisplayTitle": "Test Bölümü 2 — Çift Civata",
+    "IsDraft": false,
+    "Width": 8,
+    "Height": 8,
+    "Moves": 14,
+    "ColorCount": 5,
+    "SpawnSeed": 2342,
+    "ChapterMachineId": "prototype",
+    "MotorRotated": false,
+    "Cells": [
+        {
+            "X": 1,
+            "Y": 3,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 1,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 6,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        }
+    ]
+}

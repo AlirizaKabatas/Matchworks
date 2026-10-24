@@ -1,0 +1,95 @@
+[
+  {
+    "file": "04-tutorial-level-04.png",
+    "level": 4,
+    "original": "/Users/ali/MechanicalCrush/Docs/ReleaseMedia/Screenshots/20261024/batch03/codex-clipboard-17c80161-a60e-4f57-b40a-0e10ac59919f.png",
+    "source_size": [
+      786,
+      1346
+    ],
+    "crop": [
+      18,
+      14,
+      760,
+      1326
+    ],
+    "size": [
+      742,
+      1312
+    ],
+    "pixel_exact": true,
+    "sha256": "2908a5de4aaa0509a0c9f592e8482c871f31bbf118593003e286b8eeaefe1df5"
+  },
+  {
+    "file": "02-gameplay-level-07.png",
+    "level": 7,
+    "original": "/Users/ali/MechanicalCrush/Docs/ReleaseMedia/Screenshots/20261024/batch03/codex-clipboard-443a9948-1286-4297-9963-0ee979326fcd.png",
+    "source_size": [
+      806,
+      1344
+    ],
+    "crop": [
+      22,
+      16,
+      764,
+      1328
+    ],
+    "size": [
+      742,
+      1312
+    ],
+    "pixel_exact": true,
+    "sha256": "ad335268f6c34e194bb68127d8e631bbd16c6110461324ca5f2a6995bbf7ab5d"
+  },
+  {
+    "file": "01-gameplay-level-08.png",
+    "level": 8,
+    "original": "/Users/ali/MechanicalCrush/Docs/ReleaseMedia/Screenshots/20261024/batch03/codex-clipboard-b62dc76e-26f0-4d8b-8e89-f7ab0136ade2.png",
+    "source_size": [
+      894,
+      1364
+    ],
+    "crop": [
+      48,
+      30,
+      790,
+      1342
+    ],
+    "size": [
+      742,
+      1312
+    ],
+    "pixel_exact": true,
+    "sha256": "d84e7c0d98220b5ba8e3abe1fb54d5cb542e21234aeace88ed2b16069ddb88ed"
+  },
+  {
+    "file": "03-level-map.png",
+    "original": "/Users/ali/MechanicalCrush/Docs/ReleaseMedia/Screenshots/20261024/itch-ready/Onerilen-6/03-level-map.png",
+    "pixel_exact": true,
+    "size": [
+      742,
+      1312
+    ],
+    "sha256": "017c44346b1fcf371ec7d3c6c94004c70a64349a4cd59a4543539624147c17d3"
+  },
+  {
+    "file": "05-achievements.png",
+    "original": "/Users/ali/MechanicalCrush/Docs/ReleaseMedia/Screenshots/20261024/itch-ready/Onerilen-6/05-achievements.png",
+    "pixel_exact": true,
+    "size": [
+      742,
+      1308
+    ],
+    "sha256": "72d0308d7bbdcd6e05174f6bb5f7b10944360d45b2abd7cd3dde8ea60af1478c"
+  },
+  {
+    "file": "06-reward-wheel.png",
+    "original": "/Users/ali/MechanicalCrush/Docs/ReleaseMedia/Screenshots/20261024/itch-ready/Onerilen-6/06-reward-wheel.png",
+    "pixel_exact": true,
+    "size": [
+      742,
+      1312
+    ],
+    "sha256": "d3367fd48bfed5067bb1024485a9832a9cdaffdb75f499a607cdd070c4c9dc0b"
+  }
+]

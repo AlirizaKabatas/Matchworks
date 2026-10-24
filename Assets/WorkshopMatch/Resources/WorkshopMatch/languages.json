@@ -1,0 +1,699 @@
+{
+  "entries": [
+    {
+      "source": "PLAY",
+      "tr": "OYNA",
+      "en": "PLAY"
+    },
+    {
+      "source": "SETTINGS",
+      "tr": "AYARLAR",
+      "en": "SETTINGS"
+    },
+    {
+      "source": "SOUND",
+      "tr": "SES",
+      "en": "SOUND"
+    },
+    {
+      "source": "MUSIC",
+      "tr": "MUZIK",
+      "en": "MUSIC"
+    },
+    {
+      "source": "RESTART",
+      "tr": "YENIDEN BASLAT",
+      "en": "RESTART"
+    },
+    {
+      "source": "MAIN MENU",
+      "tr": "ANA MENU",
+      "en": "MAIN MENU"
+    },
+    {
+      "source": "RETRY",
+      "tr": "TEKRAR DENE",
+      "en": "RETRY"
+    },
+    {
+      "source": "NEXT LEVEL",
+      "tr": "SONRAKI BOLUM",
+      "en": "NEXT LEVEL"
+    },
+    {
+      "source": "CONTINUE",
+      "tr": "DEVAM",
+      "en": "CONTINUE"
+    },
+    {
+      "source": "MOVES",
+      "tr": "HAMLE",
+      "en": "MOVES"
+    },
+    {
+      "source": "BACK",
+      "tr": "GERI",
+      "en": "BACK"
+    },
+    {
+      "source": "CANCEL",
+      "tr": "IPTAL",
+      "en": "CANCEL"
+    },
+    {
+      "source": "HELP",
+      "tr": "YARDIM",
+      "en": "HELP"
+    },
+    {
+      "source": "MATCH",
+      "tr": "ESLESTIR",
+      "en": "MATCH"
+    },
+    {
+      "source": "CREATE TOOLS",
+      "tr": "ARAC OLUSTUR",
+      "en": "CREATE TOOLS"
+    },
+    {
+      "source": "USE TOOLS",
+      "tr": "ARAC KULLAN",
+      "en": "USE TOOLS"
+    },
+    {
+      "source": "COMBOS",
+      "tr": "BIRLESIMLER",
+      "en": "COMBOS"
+    },
+    {
+      "source": "BOLTS AND MOTOR",
+      "tr": "PARCALAR VE MOTOR",
+      "en": "BOLTS AND MOTOR"
+    },
+    {
+      "source": "OIL",
+      "tr": "YAG",
+      "en": "OIL"
+    },
+    {
+      "source": "STOCK AND CREDITS",
+      "tr": "ARACLAR VE KREDILER",
+      "en": "STOCK AND CREDITS"
+    },
+    {
+      "source": "WHEEL",
+      "tr": "CARK",
+      "en": "WHEEL"
+    },
+    {
+      "source": "GET TOOLS",
+      "tr": "ARAC KAZAN",
+      "en": "GET TOOLS"
+    },
+    {
+      "source": "WIN AND LOSE",
+      "tr": "KAZANMA VE KAYBETME",
+      "en": "WIN AND LOSE"
+    },
+    {
+      "source": "CONTROLS",
+      "tr": "KONTROLLER",
+      "en": "CONTROLS"
+    },
+    {
+      "source": "LEVEL COMPLETE!",
+      "tr": "BOLUM TAMAMLANDI!",
+      "en": "LEVEL COMPLETE!"
+    },
+    {
+      "source": "OUT OF MOVES",
+      "tr": "HAMLELER BITTI",
+      "en": "OUT OF MOVES"
+    },
+    {
+      "source": "YOU WON!",
+      "tr": "KAZANDIN!",
+      "en": "YOU WON!"
+    },
+    {
+      "source": "NO PRIZE",
+      "tr": "ODUL YOK",
+      "en": "NO PRIZE"
+    },
+    {
+      "source": "TRY AGAIN",
+      "tr": "TEKRAR DENE",
+      "en": "TRY AGAIN"
+    },
+    {
+      "source": "TRY\nAGAIN",
+      "tr": "TEKRAR\nDENE",
+      "en": "TRY\nAGAIN"
+    },
+    {
+      "source": "10 MOVES = 1 SPIN",
+      "tr": "10 HAMLE = 1 CEVIRME",
+      "en": "10 MOVES = 1 SPIN"
+    },
+    {
+      "source": "SUPPORT ME ON",
+      "tr": "DESTEK OL",
+      "en": "SUPPORT ME ON"
+    },
+    {
+      "source": "Link coming soon",
+      "tr": "Baglanti yakinda",
+      "en": "Link coming soon"
+    },
+    {
+      "source": "Try again to complete the objectives",
+      "tr": "Hedefleri tamamlamak icin tekrar dene",
+      "en": "Try again to complete the objectives"
+    },
+    {
+      "source": "LANGUAGES",
+      "tr": "DILLER",
+      "en": "LANGUAGES"
+    },
+    {
+      "source": "Choose your language",
+      "tr": "Dilini sec",
+      "en": "Choose your language"
+    },
+    {
+      "source": "Change language?",
+      "tr": "Dili degistirmek istedigine emin misin?",
+      "en": "Change language?"
+    },
+    {
+      "source": "TURKCE",
+      "tr": "TURKCE",
+      "en": "TURKCE"
+    },
+    {
+      "source": "ENGLISH",
+      "tr": "ENGLISH",
+      "en": "ENGLISH"
+    },
+    {
+      "source": "EVET",
+      "tr": "EVET",
+      "en": "YES"
+    },
+    {
+      "source": "HAYIR",
+      "tr": "HAYIR",
+      "en": "NO"
+    },
+    {
+      "source": "OGRETICIYI ATLA",
+      "tr": "OGRETICIYI ATLA",
+      "en": "SKIP TUTORIAL"
+    },
+    {
+      "source": "DEVAM ICIN DOKUN",
+      "tr": "DEVAM ICIN DOKUN",
+      "en": "TAP TO CONTINUE"
+    },
+    {
+      "source": "10 hamle yap",
+      "tr": "10 hamle yap",
+      "en": "Make 10 moves"
+    },
+    {
+      "source": "10 hamle tamamlandi!",
+      "tr": "10 hamle tamamlandi!",
+      "en": "10 moves completed!"
+    },
+    {
+      "source": "Hedefler tamamlandi!",
+      "tr": "Hedefler tamamlandi!",
+      "en": "Objectives completed!"
+    },
+    {
+      "source": "HEDEFLER TAMAM — MOTOR ÇALIŞTI",
+      "tr": "HEDEFLER TAMAM — MOTOR ÇALIŞTI",
+      "en": "OBJECTIVES COMPLETE — MOTOR STARTED"
+    },
+    {
+      "source": "Aynı renkten üç şekeri eşleştir. Yan yana duran şekerleri değiştirerek bir sıra oluştur.",
+      "tr": "Aynı renkten üç şekeri eşleştir. Yan yana duran şekerleri değiştirerek bir sıra oluştur.",
+      "en": "Match three candies of the same color. Swap candies next to each other to make a line."
+    },
+    {
+      "source": "Bu şekeri yanındaki şekere kaydır. Aynı renkleri yan yana getir.",
+      "tr": "Bu şekeri yanındaki şekere kaydır. Aynı renkleri yan yana getir.",
+      "en": "Slide this candy to the one next to it. Line up matching colors."
+    },
+    {
+      "source": "Makine parçalarında iki kat pas var. Yanlarında iki kez eşleştirerek parçaları temizle.",
+      "tr": "Makine parçalarında iki kat pas var. Yanlarında iki kez eşleştirerek parçaları temizle.",
+      "en": "Machine parts have two rust layers. Make two matches beside them to clean them."
+    },
+    {
+      "source": "Parçanın yanında üç şekeri eşleştir.",
+      "tr": "Parçanın yanında üç şekeri eşleştir.",
+      "en": "Match three candies beside the part."
+    },
+    {
+      "source": "Pas tamamen temizlenince parça yukarı çıkar ve sütunundaki şekerleri temizler.",
+      "tr": "Pas tamamen temizlenince parça yukarı çıkar ve sütunundaki şekerleri temizler.",
+      "en": "Once clean, the part rises and clears candies in its column."
+    },
+    {
+      "source": "Aynı renkten dört şekeri düz bir sırada eşleştirerek havai fişek oluşturabilirsin.",
+      "tr": "Aynı renkten dört şekeri düz bir sırada eşleştirerek havai fişek oluşturabilirsin.",
+      "en": "Match four candies of the same color in a line to create a firework."
+    },
+    {
+      "source": "Dört şekeri aynı sırada birleştir.",
+      "tr": "Dört şekeri aynı sırada birleştir.",
+      "en": "Match four candies in a line."
+    },
+    {
+      "source": "Fişeği yanındaki şekere kaydırman, yönündeki satırı veya sütunu temizler.",
+      "tr": "Fişeği yanındaki şekere kaydırman, yönündeki satırı veya sütunu temizler.",
+      "en": "Sliding the firework to a candy next to it clears its row or column."
+    },
+    {
+      "source": "Fişek aracı artık açık! Tahtada oluşturduğun her fişek sana 1 fişek kredisi kazandırır.",
+      "tr": "Fişek aracı artık açık! Tahtada oluşturduğun her fişek sana 1 fişek kredisi kazandırır.",
+      "en": "Fireworks are unlocked! Each firework you create earns one firework credit."
+    },
+    {
+      "source": "4 fişek kredisi biriktiğinde kullanabileceğin 1 fişek kazanırsın. İlk fişeğin ücretsiz.",
+      "tr": "4 fişek kredisi biriktiğinde kullanabileceğin 1 fişek kazanırsın. İlk fişeğin ücretsiz.",
+      "en": "Four firework credits earn one firework. Your first firework is free."
+    },
+    {
+      "source": "Alttaki fişek aracına dokun. Tahtaya bir fişek yerleştireceğiz.",
+      "tr": "Alttaki fişek aracına dokun. Tahtaya bir fişek yerleştireceğiz.",
+      "en": "Tap the firework below to place one on the board."
+    },
+    {
+      "source": "Sarı döndürme tuşuna dokun. Fişeğin yönü yatay veya dikey olur.",
+      "tr": "Sarı döndürme tuşuna dokun. Fişeğin yönü yatay veya dikey olur.",
+      "en": "Tap the yellow rotate button to change the firework direction."
+    },
+    {
+      "source": "Şimdi tahtadaki herhangi bir normal şekere dokunarak fişeği oraya yerleştir.",
+      "tr": "Şimdi tahtadaki herhangi bir normal şekere dokunarak fişeği oraya yerleştir.",
+      "en": "Tap any normal candy to place the firework there."
+    },
+    {
+      "source": "Yerleştirmek hamle harcamaz. Çalıştırmak için yanındaki şekere kaydır.",
+      "tr": "Yerleştirmek hamle harcamaz. Çalıştırmak için yanındaki şekere kaydır.",
+      "en": "Placing a tool costs no move. Slide it to a candy next to it to activate it."
+    },
+    {
+      "source": "Yerleştirdiğin fişeği yanındaki şekere kaydır.",
+      "tr": "Yerleştirdiğin fişeği yanındaki şekere kaydır.",
+      "en": "Slide the firework you placed to a candy next to it."
+    },
+    {
+      "source": "Yağ, şekerlerin altındaki zeminde kalır. Temizlemek için tam üstünde eşleştirme yap.",
+      "tr": "Yağ, şekerlerin altındaki zeminde kalır. Temizlemek için tam üstünde eşleştirme yap.",
+      "en": "Oil lies beneath candies. Match candies directly over it to clean it."
+    },
+    {
+      "source": "Yağın üstündeki şekerleri eşleştir.",
+      "tr": "Yağın üstündeki şekerleri eşleştir.",
+      "en": "Match the candies over the oil."
+    },
+    {
+      "source": "Aynı renkten dört şekeri 2x2 kare halinde birleştir. Tahtada bir çekiç oluşur.",
+      "tr": "Aynı renkten dört şekeri 2x2 kare halinde birleştir. Tahtada bir çekiç oluşur.",
+      "en": "Match four candies of the same color in a 2x2 square to create a hammer."
+    },
+    {
+      "source": "Bu şekeri kaydır. Dört şekeri 2x2 karede birleştir.",
+      "tr": "Bu şekeri kaydır. Dört şekeri 2x2 karede birleştir.",
+      "en": "Slide this candy to make a 2x2 match."
+    },
+    {
+      "source": "Çekici yanındaki şekere kaydırman, 3x3 alanı temizler.",
+      "tr": "Çekici yanındaki şekere kaydırman, 3x3 alanı temizler.",
+      "en": "Sliding the hammer to a candy next to it clears a 3x3 area."
+    },
+    {
+      "source": "Çekiç aracı artık açık! Tahtada oluşturduğun her çekiç sana 1 çekiç kredisi kazandırır.",
+      "tr": "Çekiç aracı artık açık! Tahtada oluşturduğun her çekiç sana 1 çekiç kredisi kazandırır.",
+      "en": "Hammers are unlocked! Each hammer you create earns one hammer credit."
+    },
+    {
+      "source": "4 çekiç kredisi biriktiğinde kullanabileceğin 1 çekiç kazanırsın. İlk çekicin ücretsiz.",
+      "tr": "4 çekiç kredisi biriktiğinde kullanabileceğin 1 çekiç kazanırsın. İlk çekicin ücretsiz.",
+      "en": "Four hammer credits earn one hammer. Your first hammer is free."
+    },
+    {
+      "source": "Yağ bloğunun kabuğunu kırmak için yanında eşleştirme yap. Altındaki yağı ayrıca temizlemelisin.",
+      "tr": "Yağ bloğunun kabuğunu kırmak için yanında eşleştirme yap. Altındaki yağı ayrıca temizlemelisin.",
+      "en": "Match beside an oil block to break its shell. Then clean the oil beneath it."
+    },
+    {
+      "source": "Yağ bloğunun yanında şekerleri eşleştir.",
+      "tr": "Yağ bloğunun yanında şekerleri eşleştir.",
+      "en": "Match candies beside the oil block."
+    },
+    {
+      "source": "Kabuk kırılınca altındaki yağ ortaya çıkar.",
+      "tr": "Kabuk kırılınca altındaki yağ ortaya çıkar.",
+      "en": "Breaking the shell reveals the oil underneath."
+    },
+    {
+      "source": "Kalan yağın üstünde eşleştirme yap.",
+      "tr": "Kalan yağın üstünde eşleştirme yap.",
+      "en": "Make a match over the remaining oil."
+    },
+    {
+      "source": "Motorun yanındaki her eşleşme dolum çubuğunu bir adım ilerletir. Çubuğu doldurup motoru çalıştır.",
+      "tr": "Motorun yanındaki her eşleşme dolum çubuğunu bir adım ilerletir. Çubuğu doldurup motoru çalıştır.",
+      "en": "Each match beside the motor fills its bar by one step. Fill the bar to start it."
+    },
+    {
+      "source": "Motorun yanında şekerleri eşleştir.",
+      "tr": "Motorun yanında şekerleri eşleştir.",
+      "en": "Match candies beside the motor."
+    },
+    {
+      "source": "Çubuk dolduğunda motor patlar ve çevresindeki şekerleri temizler. Bölümü bitirmek için diğer hedefleri de tamamlamalısın.",
+      "tr": "Çubuk dolduğunda motor patlar ve çevresindeki şekerleri temizler. Bölümü bitirmek için diğer hedefleri de tamamlamalısın.",
+      "en": "When full, the motor bursts and clears its surroundings. Complete the other objectives to finish the level."
+    },
+    {
+      "source": "Aynı renkten beş şekeri düz bir sırada birleştirerek bir mıknatıs oluştur.",
+      "tr": "Aynı renkten beş şekeri düz bir sırada birleştirerek bir mıknatıs oluştur.",
+      "en": "Match five candies of the same color in a line to create a magnet."
+    },
+    {
+      "source": "Beş şekeri aynı sırada birleştir.",
+      "tr": "Beş şekeri aynı sırada birleştir.",
+      "en": "Match five candies in a line."
+    },
+    {
+      "source": "Mıknatısı yanındaki bir şekere kaydırman, tahtadaki aynı renkteki tüm şekerleri temizler.",
+      "tr": "Mıknatısı yanındaki bir şekere kaydırman, tahtadaki aynı renkteki tüm şekerleri temizler.",
+      "en": "Sliding the magnet to a candy next to it clears all candies of that color."
+    },
+    {
+      "source": "Mıknatıs aracı artık açık! Oluşturduğun her mıknatıs sana 1 mıknatıs kredisi verir.",
+      "tr": "Mıknatıs aracı artık açık! Oluşturduğun her mıknatıs sana 1 mıknatıs kredisi verir.",
+      "en": "Magnets are unlocked! Each magnet you create earns one magnet credit."
+    },
+    {
+      "source": "5 mıknatıs kredisi biriktiğinde kullanabileceğin 1 mıknatıs kazanırsın. İlk mıknatısın ücretsiz.",
+      "tr": "5 mıknatıs kredisi biriktiğinde kullanabileceğin 1 mıknatıs kazanırsın. İlk mıknatısın ücretsiz.",
+      "en": "Five magnet credits earn one magnet. Your first magnet is free."
+    },
+    {
+      "source": "İki gücü birbiriyle değiştirerek birlikte çalıştırabilirsin. Bu deneme için sana bir mıknatıs ve bir çekiç verdik.",
+      "tr": "Iki araci birlestirerek birlikte calistirabilirsin. Bu deneme icin bir miknatis ve bir cekic ucretsiz.",
+      "en": "Swap two tools to activate them together. A magnet and a hammer are free for this trial."
+    },
+    {
+      "source": "Mıknatıs aracına dokun. İşaretli şekere yerleştir.",
+      "tr": "Mıknatıs aracına dokun. İşaretli şekere yerleştir.",
+      "en": "Tap the magnet and place it on the marked candy."
+    },
+    {
+      "source": "Çekiç aracına dokun. Mıknatısın yanına yerleştir.",
+      "tr": "Çekiç aracına dokun. Mıknatısın yanına yerleştir.",
+      "en": "Tap the hammer and place it beside the magnet."
+    },
+    {
+      "source": "Mıknatısı çekice kaydırman, bir renkteki şekerleri çekiçlere dönüştürür ve hepsini birlikte çalıştırır.",
+      "tr": "Mıknatısı çekice kaydırman, bir renkteki şekerleri çekiçlere dönüştürür ve hepsini birlikte çalıştırır.",
+      "en": "Sliding the magnet to the hammer turns one color into hammers and activates them all."
+    },
+    {
+      "source": "Fişek, çekiç ve mıknatısı birleştirerek daha güçlü hamleler yap. Diğer birleşimleri de dene!",
+      "tr": "Fişek, çekiç ve mıknatısı birleştirerek daha güçlü hamleler yap. Diğer birleşimleri de dene!",
+      "en": "Combine fireworks, hammers and magnets for stronger moves. Try other combinations too!"
+    },
+    {
+      "source": "Bölümü bitirmek için 10 hamle yap.",
+      "tr": "Bölümü bitirmek için 10 hamle yap.",
+      "en": "Make 10 moves to finish the level."
+    },
+    {
+      "source": "Üstteki hedefleri tamamla, sonraki bölümü aç.",
+      "tr": "Üstteki hedefleri tamamla, sonraki bölümü aç.",
+      "en": "Complete the objectives above to unlock the next level."
+    },
+    {
+      "source": "Uygun hamleleri keşfet, hedefleri tamamla!",
+      "tr": "Uygun hamleleri keşfet, hedefleri tamamla!",
+      "en": "Find your moves and complete the objectives!"
+    },
+    {
+      "source": "Oluşan çekici yanındaki şekere kaydır. 3x3 alandaki şekerleri ve açık yağı temizler, yağ kabuklarını kırar.",
+      "tr": "Oluşan çekici yanındaki şekere kaydır. 3x3 alandaki şekerleri ve açık yağı temizler, yağ kabuklarını kırar.",
+      "en": "Slide the hammer to a candy next to it. It clears a 3x3 area and exposed oil, and breaks oil shells."
+    },
+    {
+      "source": "Önce bu şekeri yanındaki şekere kaydır.",
+      "tr": "Önce bu şekeri yanındaki şekere kaydır.",
+      "en": "First slide this candy to the one next to it."
+    },
+    {
+      "source": "Öğreticiyi tekrar görmek ister misin?",
+      "tr": "Öğreticiyi tekrar görmek ister misin?",
+      "en": "Would you like to replay the tutorial?"
+    },
+    {
+      "source": "İlk bölüm tamamlandı! İkinci bölümün kilidi açıldı. Seçmek için 2'ye dokun.",
+      "tr": "İlk bölüm tamamlandı! İkinci bölümün kilidi açıldı. Seçmek için 2'ye dokun.",
+      "en": "Level one complete! Level two is unlocked. Tap 2 to select it."
+    },
+    {
+      "source": "Haritayı yukarı veya aşağı kaydırabilirsin.",
+      "tr": "Haritayı yukarı veya aşağı kaydırabilirsin.",
+      "en": "You can scroll the map up or down."
+    },
+    {
+      "source": "Geri tuşuna dokunduğunda ana ekrana dönersin.",
+      "tr": "Geri tuşuna dokunduğunda ana ekrana dönersin.",
+      "en": "Tap Back to return to the home screen."
+    },
+    {
+      "source": "İkinci bölüm seçili. Başlamak için PLAY'e dokun.",
+      "tr": "Ikinci bolum secili. Baslamak icin OYNA'ya dokun.",
+      "en": "Level two is selected. Tap PLAY to begin."
+    },
+    {
+      "source": "Diğer bölümlere bakmak için haritanın boş bir yerine dokun.",
+      "tr": "Diğer bölümlere bakmak için haritanın boş bir yerine dokun.",
+      "en": "Tap an empty area of the map to explore the other levels."
+    },
+    {
+      "source": "Ödül çarkına dokun.",
+      "tr": "Ödül çarkına dokun.",
+      "en": "Tap the reward wheel."
+    },
+    {
+      "source": "Kalan hamlelerin kasada birikir. 10 hamleyle çarkı çevir ve araç kazan.",
+      "tr": "Kalan hamlelerin kasada birikir. 10 hamleyle çarkı çevir ve araç kazan.",
+      "en": "Your remaining moves collect in the bank. Spend 10 moves to spin and win tools."
+    },
+    {
+      "source": "Öğretici tamamlandı! Oynamaya devam edebilirsin.",
+      "tr": "Öğretici tamamlandı! Oynamaya devam edebilirsin.",
+      "en": "Tutorial complete! Keep playing."
+    },
+    {
+      "source": "Fişek hazır! Yanındaki bir şekerle yerini değiştirerek çalıştır. Yönündeki satır veya sütunu temizler.",
+      "tr": "Fişek hazır! Yanındaki bir şekerle yerini değiştirerek çalıştır. Yönündeki satır veya sütunu temizler.",
+      "en": "Firework ready! Swap it with a candy next to it to clear its row or column."
+    },
+    {
+      "source": "Çekiç hazır! Soldaki şekerle yerini değiştirerek çalıştır.",
+      "tr": "Çekiç hazır! Soldaki şekerle yerini değiştirerek çalıştır.",
+      "en": "Hammer ready! Swap it with the candy on its left."
+    },
+    {
+      "source": "Mıknatısı bu şekere kaydır. Temizlenecek rengi sen seçersin.",
+      "tr": "Mıknatısı bu şekere kaydır. Temizlenecek rengi sen seçersin.",
+      "en": "Slide the magnet to this candy to choose the color to clear."
+    },
+    {
+      "source": "Şekeri seç, sonra komşusuna dokun",
+      "tr": "Şekeri seç, sonra komşusuna dokun",
+      "en": "Select a candy, then tap the one next to it"
+    },
+    {
+      "source": "İpucu: bu şekeri komşusuna kaydır",
+      "tr": "İpucu: bu şekeri komşusuna kaydır",
+      "en": "Hint: slide this candy to the one next to it"
+    },
+    {
+      "source": "Seçim iptal edildi",
+      "tr": "Seçim iptal edildi",
+      "en": "Selection cancelled"
+    },
+    {
+      "source": "Araç seçimi iptal edildi",
+      "tr": "Araç seçimi iptal edildi",
+      "en": "Tool selection cancelled"
+    },
+    {
+      "source": "Araç iptal edildi — stok ve hamle korunuyor",
+      "tr": "Araç iptal edildi — stok ve hamle korunuyor",
+      "en": "Tool cancelled — no tool or move spent"
+    },
+    {
+      "source": "Araç için renkli bir şeker karesi seç",
+      "tr": "Araç için renkli bir şeker karesi seç",
+      "en": "Choose a normal candy for the tool"
+    },
+    {
+      "source": "Araç kullanılamıyor — stok veya hamle yok",
+      "tr": "Araç kullanılamıyor — stok veya hamle yok",
+      "en": "No tools or moves available"
+    },
+    {
+      "source": "Bu karede değiştirilebilir şeker yok",
+      "tr": "Bu karede değiştirilebilir şeker yok",
+      "en": "There is no candy to swap here"
+    },
+    {
+      "source": "Normal bir şeker seç — mevcut özel parçanın üstüne yerleştirilemez",
+      "tr": "Normal bir şeker seç — mevcut özel parçanın üstüne yerleştirilemez",
+      "en": "Choose a normal candy, not an existing tool"
+    },
+    {
+      "source": "Mıknatıs yerleştirilecek normal şekeri seç",
+      "tr": "Mıknatıs yerleştirilecek normal şekeri seç",
+      "en": "Choose a normal candy for the magnet"
+    },
+    {
+      "source": "Çekiç yerleştirilecek normal şekeri seç",
+      "tr": "Çekiç yerleştirilecek normal şekeri seç",
+      "en": "Choose a normal candy for the hammer"
+    },
+    {
+      "source": "Eşleşme temizleniyor",
+      "tr": "Eşleşme temizleniyor",
+      "en": "Clearing the match"
+    },
+    {
+      "source": "Eşleşme yok — hamle geri alındı",
+      "tr": "Eşleşme yok — hamle geri alındı",
+      "en": "No match — move returned"
+    },
+    {
+      "source": "Donmuş yağ — komşu eşleşmeyle kabuğu kır",
+      "tr": "Donmuş yağ — komşu eşleşmeyle kabuğu kır",
+      "en": "Oil block — match beside it to break its shell"
+    },
+    {
+      "source": "Komsu sekerleri degistirerek ayni renkten\nen az uc sekeri yan yana getir.\nGecerli eslesme bir hamle harcar.\nEslesme olusmazsa sekerler geri doner\nve hamlen azalmaz. Ustteki hedefleri\nhamlelerin bitmeden tamamla.",
+      "tr": "Yan yana sekerleri degistirerek ayni\nrenkten en az ucunu eslestir. Gecerli\neslesme bir hamle harcar. Gecersiz takasta\nhamlen geri gelir. Hamlelerin bitmeden\nhedefleri tamamla.",
+      "en": "Swap candies next to each other to match at\nleast three of one color. A valid match\ncosts one move. An invalid swap returns\nyour move. Complete the objectives before\nyou run out."
+    },
+    {
+      "source": "Ayni renkten sekerlerle guc olustur:\nDuz sirada 4 seker: havai fisek.\n2x2 kare halinde 4 seker: cekic.\nDuz sirada 5 veya fazlasi: miknatis.\nOlusan guc tahtada kalir; calistirmak\nicin komsu bir sekerle yerini degistir.",
+      "tr": "Duz sirada dort seker fisek, 2x2 kare\ncekic, bes seker miknatis olusturur. Araci\nyanindaki sekere kaydirarak calistir.",
+      "en": "Match four in a line for a firework, four\nin a 2x2 square for a hammer, or five in a\nline for a magnet. Slide the tool to a\ncandy next to it to activate it."
+    },
+    {
+      "source": "Stoktaki bir araci alt raftan sec.\nNormal bir sekere dokunarak yerlestir;\nbu islem stoktan 1 arac eksiltir,\nhamle harcamaz. Komsusuna kaydirinca:\nFisek satiri veya sutunu temizler.\nCekic cevresindeki 3x3 alana vurur.\nMiknatis komsu sekerin rengini temizler.",
+      "tr": "Alttan bir arac secip normal sekere\nyerlestir. Bir arac harcanir, hamle\nharcanmaz. Kaydirinca fisek bir hatti,\ncekic 3x3 alani, miknatis bir rengi\ntemizler.",
+      "en": "Choose a tool below and tap a normal candy\nto place it. Placing costs one tool but no\nmove. Slide it to activate it: fireworks\nclear a line, hammers clear 3x3, and\nmagnets clear a color."
+    },
+    {
+      "source": "Yan yana iki gucu birbiriyle degistir.\nIki fisek: bir satir ve bir sutun.\nIki cekic: 5x5 alan.\nCekic + fisek: uc satir veya sutun.\nMiknatis + guc: bir rengi o guce\ndonusturur ve olusan gucleri calistirir.\nIki miknatis: tum tahtayi temizler.",
+      "tr": "Iki araci birlestir: iki fisek arti\nbiciminde, iki cekic 5x5, cekic ve fisek uc\nhat temizler. Miknatis ve arac bir rengi\ndonusturur; iki miknatis tum tahtayi\ntemizler.",
+      "en": "Swap two tools to combine them. Two\nfireworks clear a cross; two hammers clear\n5x5; hammer + firework clears three lines;\nmagnet + tool converts one color; two\nmagnets clear the board."
+    },
+    {
+      "source": "Makine parcalarinda iki kat pas var.\nYanlarinda iki kez eslestirerek temizle.\nOnce bosluklar dolar, sonra temizlenen\nparca yukselip sutunu temizler.\nMotorun yaninda eslestirme yapmak\ncubugunu doldurur. Bes vurusla patlar.\nBolum icin diger hedefleri de tamamla.",
+      "tr": "Parcalarin iki pas kati vardir. Yanlarinda\niki kez eslestir. Temiz parca yukselip\nsutununu temizler. Motorun cubugu yanindaki\neslesmelerle dolar; dolunca patlar. Diger\nhedefleri de tamamla.",
+      "en": "Parts have two rust layers. Match beside\nthem twice to clean them. Clean parts rise\nand clear their column. Match beside a\nmotor to fill its bar. It bursts when full;\ncomplete the other objectives too."
+    },
+    {
+      "source": "Yagi temizlemek icin tam ustundeki\nsekerleri eslestir. Gucler de acik\nyagi temizleyebilir. Yag blogunda ise\nonce yaninda esleserek kabugu kir.\nKabuk kirilinca alttaki yag kalir;\nustunde esleserek veya bir gucle\nkalan yagi da temizle.",
+      "tr": "Yagin ustunde esleserek temizle. Araclar da\nacik yagi temizler. Yag blogunun yaninda\neslesip kabugu kir, ortaya cikan yagi\ntemizle.",
+      "en": "Match over oil to clean it. Tools also\nclean exposed oil. Match beside an oil\nblock to break the shell, then clean the\noil it reveals."
+    },
+    {
+      "source": "Tahtada olusturdugun her guc,\nkendi aracina 1 kredi kazandirir.\n4 fisek kredisi: stokuna 1 fisek.\n4 cekic kredisi: stokuna 1 cekic.\n5 miknatis kredisi: stokuna 1 miknatis.\nKrediler ve stok sonraki bolume tasinir.\nAraci kullanmak yeni kredi kazandirmaz.",
+      "tr": "Arac olusturmak kredi kazandirir. Dort\nfisek/cekic veya bes miknatis kredisi bir\narac eder. Kazaninca krediler kalir.\nBitmeyen denemeyi yeniden baslatmak veya\nterk etmek kredilerini geri alir.",
+      "en": "Creating tools earns credits: four firework\nor hammer credits, or five magnet credits,\nearn one tool. Winning keeps earned\ncredits. Restarting or leaving an\nunfinished attempt removes its credits."
+    },
+    {
+      "source": "Cark 10. bolumu tamamlayinca acilir.\nKazandigin bolumlerden kalan hamleler\nkasanda birikir. Her 10 hamleyle\ncarki bir kez cevirip arac kazanabilirsin.\nOdul, kullanabilecegin stoga eklenir.\nTRY AGAIN dilimi odul vermez;\nsonraki cevirme yine 10 hamle ister.",
+      "tr": "Cark 10. bolumden sonra acilir. Kazanilan\nbolumlerin kalan hamleleri kasada birikir.\nHer cevirme 10 hamledir. Kazandigin araclar\neklenir; bos dilim odul vermez.",
+      "en": "The wheel unlocks after level 10. Remaining\nmoves from wins collect in the bank. Each\nspin costs 10 moves. Tools won are added to\nyour inventory. The blank sector gives no\nreward."
+    },
+    {
+      "source": "Arac kazanmak icin eslesmelerle guc\nolusturup ilgili kredileri biriktir\nveya kalan hamlelerinle carki cevir.\nMiknatisin donusturdugu gucler\nve stoktan yerlestirdigin araclar\nyeni kredi kazandirmaz. Kaybetsen de\nkazandigin stok ve krediler korunur.",
+      "tr": "Arac olusturarak veya carki cevirerek arac\nkazan. Stoktan yerlestirilen ve miknatisla\ndonusturulen araclar yeni kredi vermez.\nBitmeyen denemenin kredileri yeniden\nbaslatinca veya cikinca geri alinir.",
+      "en": "Earn tools by creating them on the board or\nspinning the wheel. Tools placed from\ninventory and magnet conversions give no\nnew credits. Credits from unfinished\nattempts are removed when you restart or\nleave."
+    },
+    {
+      "source": "Tum hedefler tamamlaninca kazanirsin.\nCarklar donmeye baslar; kalan\npatlamalar bitince sonuc ekrani acilir.\nHamle biter, hedef kalirsa tekrar dene.\nKazandigin bolumden kalan hamleler\nkasana eklenir. Tekrar baslatmak\nharcadigin stok araclarini geri vermez.",
+      "tr": "Tum hedefleri tamamlayinca kazanirsin.\nEtkiler bitince sonuc acilir. Kalan\nhamleler kasaya gider. Yeniden baslatmak\nkullandigin araclari geri vermez.",
+      "en": "Complete all objectives to win. The result\nappears after the remaining effects finish.\nRemaining moves go to the wheel bank.\nRestarting does not refund tools you spent."
+    },
+    {
+      "source": "Sekerleri yatay veya dikey kaydir.\nCivata, motor ve yag blogu takas olmaz.\nFisek yerlestirmeden sari tusla\nyatay veya dikey yonunu secebilirsin.\nCANCEL, arac secimini iptal eder.\nHaritayi kaydirarak bolumleri gez;\nacik bir bolumu secip PLAY ile basla.",
+      "tr": "Sekerleri yatay veya dikey kaydir. Parca,\nmotor ve yag blogu takas olmaz. Fisegi\nyerlestirmeden sari tusla dondur. IPTAL\narac secimini kapatir. Haritadan acik bir\nbolum secip OYNA tusuna dokun.",
+      "en": "Slide candies horizontally or vertically.\nParts, motors and oil blocks cannot be\nswapped. Rotate a firework with the yellow\nbutton before placing it. CANCEL cancels\ntool selection. Choose an unlocked map\nlevel and tap PLAY."
+    },
+    {
+      "source": "MENU",
+      "tr": "MENU",
+      "en": "MENU"
+    },
+    {
+      "source": "ACHIEVEMENTS",
+      "tr": "BASARIMLAR",
+      "en": "ACHIEVEMENTS"
+    },
+    {
+      "source": "HOW TO PLAY",
+      "tr": "NASIL OYNANIR",
+      "en": "HOW TO PLAY"
+    },
+    {
+      "source": "SUPPORT ME",
+      "tr": "DESTEK OL",
+      "en": "SUPPORT ME"
+    },
+    {
+      "source": "Coming soon",
+      "tr": "Yakinda",
+      "en": "Coming soon"
+    },
+    {
+      "source": "TEBRİKLER!",
+      "tr": "TEBRİKLER!",
+      "en": "CONGRATULATIONS!"
+    },
+    {
+      "source": "Demoyu tamamladın.",
+      "tr": "Demoyu tamamladın.",
+      "en": "You completed the demo."
+    },
+    {
+      "source": "Oynadığın için teşekkürler.",
+      "tr": "Oynadığın için teşekkürler.",
+      "en": "Thanks for playing."
+    },
+    {
+      "source": "HARİTAYA DÖN",
+      "tr": "HARİTAYA DÖN",
+      "en": "BACK TO MAP"
+    },
+    {
+      "source": "DEVELOPER",
+      "tr": "GELİŞTİRİCİ",
+      "en": "DEVELOPER"
+    },
+    {
+      "source": "NEXT",
+      "tr": "ILERI",
+      "en": "NEXT"
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "pages": [
+    {
+      "demo": "Match",
+      "titleTr": "EŞLEŞTİRME",
+      "titleEn": "MATCHING",
+      "bodyTr": "Yan yana iki şekeri değiştirmen, aynı renkten en az üç şekeri yatay veya dikey sıraya getirir. Geçerli eşleşme bir hamle harcar. Eşleşme oluşmazsa şekerler geri döner; hamlen azalmaz.",
+      "bodyEn": "Swap two adjacent candies to line up at least three of one color horizontally or vertically. A valid match costs one move. If no match forms, the candies return and no move is spent.",
+      "stepsTr": [
+        "Aynı renkleri incele",
+        "Şekerlerin yerini değiştir",
+        "Üçlü eşleşme temizlenir"
+      ],
+      "stepsEn": [
+        "Find matching colors",
+        "Swap the two candies",
+        "The match clears"
+      ]
+    },
+    {
+      "demo": "RayCreate",
+      "titleTr": "FİŞEK OLUŞTURMA",
+      "titleEn": "CREATE A FIREWORK",
+      "bodyTr": "Aynı renkten dört şekeri tek sırada birleştirmen bir fişek oluşturur. Yatay sıradan yatay, dikey sıradan dikey fişek çıkar. Fişek, kaydırdığın şekerin vardığı karede kalır.",
+      "bodyEn": "Match four candies of one color in a straight line to create a firework. A horizontal line creates a horizontal firework; a vertical line creates a vertical one. It stays where the moved candy lands.",
+      "stepsTr": [
+        "Dört şeker için boşluğu gör",
+        "Şekeri sıraya kaydır",
+        "Fişek tahtada oluşur"
+      ],
+      "stepsEn": [
+        "Find the gap in the line",
+        "Swap the candy into place",
+        "A firework appears"
+      ]
+    },
+    {
+      "demo": "HammerCreate",
+      "titleTr": "ÇEKİÇ OLUŞTURMA",
+      "titleEn": "CREATE A HAMMER",
+      "bodyTr": "Aynı renkten dört şekeri 2x2 kare halinde birleştirmen bir çekiç oluşturur. Çekiç tahtada kalır; daha sonra yanındaki bir şekerle yerini değiştirerek çalıştırabilirsin.",
+      "bodyEn": "Match four candies of one color in a 2x2 square to create a hammer. It stays on the board until you swap it with an adjacent candy.",
+      "stepsTr": [
+        "2x2 kareyi tamamla",
+        "Son şekeri kareye kaydır",
+        "Çekiç tahtada oluşur"
+      ],
+      "stepsEn": [
+        "Find the incomplete square",
+        "Swap the last candy in",
+        "A hammer appears"
+      ]
+    },
+    {
+      "demo": "MagnetCreate",
+      "titleTr": "MIKNATIS OLUŞTURMA",
+      "titleEn": "CREATE A MAGNET",
+      "bodyTr": "Aynı renkten beş şekeri tek sırada birleştirmen bir mıknatıs oluşturur. Mıknatıs, kaydırdığın şekerin vardığı karede kalır. Beşten uzun bir düz sıra da mıknatıs oluşturabilir.",
+      "bodyEn": "Match five candies of one color in a straight line to create a magnet. It stays where the moved candy lands. A longer straight line can also create a magnet.",
+      "stepsTr": [
+        "Beş şekerlik sırayı incele",
+        "Eksik şekeri sıraya kaydır",
+        "Mıknatıs tahtada oluşur"
+      ],
+      "stepsEn": [
+        "Find the five-candy line",
+        "Swap the missing candy in",
+        "A magnet appears"
+      ]
+    },
+    {
+      "demo": "RayUse",
+      "titleTr": "FİŞEĞİN ETKİSİ",
+      "titleEn": "USE A FIREWORK",
+      "bodyTr": "Fişeği yanındaki bir şekerle değiştirmen bir hamle harcar ve onu çalıştırır. Yatay fişek bir satırı, dikey fişek bir sütunu temizler. Yolundaki açık yağı temizler; pas ve yağ kabuğuna bir darbe verir.",
+      "bodyEn": "Swap a firework with an adjacent candy to activate it for one move. A horizontal firework clears a row; a vertical one clears a column. It also clears exposed oil and damages rust and frozen shells in its path.",
+      "stepsTr": [
+        "Fişeğin yönüne bak",
+        "Yanındaki şekerle değiştir",
+        "Satır veya sütun temizlenir"
+      ],
+      "stepsEn": [
+        "Check the firework direction",
+        "Swap with an adjacent candy",
+        "A row or column clears"
+      ]
+    },
+    {
+      "demo": "HammerUse",
+      "titleTr": "ÇEKİCİN ETKİSİ",
+      "titleEn": "USE A HAMMER",
+      "bodyTr": "Çekici yanındaki bir şekerle değiştirmen, vardığı karenin çevresindeki 3x3 alanı temizler. Bu hareket bir hamle harcar. Etki alanındaki pas ve yağ kabuğu bir darbe alır; açık yağ temizlenir.",
+      "bodyEn": "Swap a hammer with an adjacent candy to clear the 3x3 area around its destination. This costs one move. Rust and frozen shells in the area take one hit, and exposed oil clears.",
+      "stepsTr": [
+        "Çekicin varacağı kareye bak",
+        "Yanındaki şekerle değiştir",
+        "Çekiç 3x3 alana vurur"
+      ],
+      "stepsEn": [
+        "Find the destination cell",
+        "Swap with an adjacent candy",
+        "The hammer strikes a 3x3 area"
+      ]
+    },
+    {
+      "demo": "MagnetUse",
+      "titleTr": "MIKNATISIN ETKİSİ",
+      "titleEn": "USE A MAGNET",
+      "bodyTr": "Mıknatısı yanındaki bir şekerle değiştirmen, tahtadaki o renkten bütün şekerleri temizler. Bu hareket bir hamle harcar. Temizlenen şekerlerin altındaki açık yağ da silinir.",
+      "bodyEn": "Swap a magnet with an adjacent candy to clear every candy of that color on the board. This costs one move. Exposed oil under the cleared candies also disappears.",
+      "stepsTr": [
+        "Hangi rengi temizleyeceğini gör",
+        "Mıknatısı o şekerle değiştir",
+        "O renkteki şekerler temizlenir"
+      ],
+      "stepsEn": [
+        "Choose the target color",
+        "Swap the magnet with that candy",
+        "Every candy of that color clears"
+      ]
+    },
+    {
+      "demo": "Unlock",
+      "titleTr": "ARAÇLARIN AÇILMASI",
+      "titleEn": "UNLOCKING TOOLS",
+      "bodyTr": "Stok araçları sırayla açılır: 4. bölümde fişek, 6. bölümde çekiç, 9. bölümde mıknatıs. Açılmış araçlar eski bölümlere döndüğünde de açık kalır. Kullanabilmen için stokta araç bulunması gerekir; öğretici kendi adımını bekletebilir.",
+      "bodyEn": "Stock tools unlock in order: firework at level 4, hammer at level 6 and magnet at level 9. They stay unlocked when you return to earlier levels. Using one requires stock; a tutorial may still wait for its guided step.",
+      "stepsTr": [
+        "Araçlar bölüm ilerlemesiyle açılır",
+        "Fişek 4, çekiç 6, mıknatıs 9",
+        "Eski bölümlerde de açık kalırlar"
+      ],
+      "stepsEn": [
+        "Progress unlocks the stock tools",
+        "Firework 4, hammer 6, magnet 9",
+        "They remain unlocked in earlier levels"
+      ]
+    },
+    {
+      "demo": "Place",
+      "titleTr": "STOKTAN ARAÇ YERLEŞTİRME",
+      "titleEn": "PLACE A STOCK TOOL",
+      "bodyTr": "Alt raftan açık ve stokta olan aracı seçip normal bir şekere dokunman, aracı o kareye yerleştirir. Bir stok harcanır; hamle harcanmaz. Engel ya da mevcut güç üzerine yerleştirilemez. Çalıştırmak için sonra kaydırman gerekir.",
+      "bodyEn": "Select an unlocked tool from the bottom shelf, then tap a normal candy to place it. This spends one stock tool, not a move. Obstacles and existing powers cannot be replaced. Activate the placed tool with a later swap.",
+      "stepsTr": [
+        "Raftan aracı seç",
+        "Normal şekere dokun",
+        "Araç yerleşir; hamle aynı kalır"
+      ],
+      "stepsEn": [
+        "Select a shelf tool",
+        "Tap a normal candy",
+        "The tool is placed without spending a move"
+      ]
+    },
+    {
+      "demo": "Rotate",
+      "titleTr": "FİŞEĞİN YÖNÜ",
+      "titleEn": "FIREWORK DIRECTION",
+      "bodyTr": "Stoktan fişek seçtiğinde sarı döndürme düğmesiyle yatay veya dikey yönü seçebilirsin. Sonra normal şekere dokunarak yerleştirirsin. İptal etmen stok veya hamle harcamaz.",
+      "bodyEn": "After selecting a stock firework, use the yellow rotation button to choose its horizontal or vertical direction. Then tap a normal candy to place it. Canceling spends neither stock nor a move.",
+      "stepsTr": [
+        "Fişek aracını seç",
+        "Sarı düğmeyle yönü değiştir",
+        "Seçtiğin yönde yerleştir"
+      ],
+      "stepsEn": [
+        "Select the firework tool",
+        "Change direction with the yellow button",
+        "Place it in the selected direction"
+      ]
+    },
+    {
+      "demo": "Rust",
+      "titleTr": "VİDA VE SOMUN",
+      "titleEn": "SCREWS AND NUTS",
+      "bodyTr": "Vida ve somunların iki pas katmanı vardır. Yanlarında yaptığın her ayrı eşleşme veya onlara ulaşan bir güç bir katmanı temizler. Pas bitince parça, dolumdan sonra yukarı çıkar ve geçtiği sütundaki şekerleri temizler.",
+      "bodyEn": "Screws and nuts have two layers of rust. Each separate adjacent match or power hit removes one layer. Once clean, the part rises after the refill and clears candies in its column.",
+      "stepsTr": [
+        "Parçada iki pas katmanı var",
+        "Her ayrı eşleşme bir katmanı alır",
+        "Temiz parça yukarı çıkar"
+      ],
+      "stepsEn": [
+        "The part has two rust layers",
+        "Each separate hit removes one layer",
+        "The clean part rises"
+      ]
+    },
+    {
+      "demo": "Oil",
+      "titleTr": "ZEMİN YAĞI",
+      "titleEn": "FLOOR OIL",
+      "bodyTr": "Açık yağı temizlemek için tam üstündeki şekeri eşleştirmen gerekir. Yağın yanında eşleşme yapmak yeterli değildir. Fişek, çekiç ve mıknatısın temizlediği karelerdeki açık yağ da silinir.",
+      "bodyEn": "Match the candy directly over exposed oil to clear it. Matching beside the oil is not enough. Fireworks, hammers and magnets also clear exposed oil in the cells they clear.",
+      "stepsTr": [
+        "Yağın üstündeki şekeri gör",
+        "Tam bu karede eşleşme oluştur",
+        "Şekerle birlikte yağ da temizlenir"
+      ],
+      "stepsEn": [
+        "Find the candy over the oil",
+        "Match directly on that cell",
+        "Both the candy and oil clear"
+      ]
+    },
+    {
+      "demo": "Frozen",
+      "titleTr": "DONMUŞ YAĞ BLOĞU",
+      "titleEn": "FROZEN OIL",
+      "bodyTr": "Bloğun yanında eşleşme yapmak veya bir güçle vurmak kabuğu kırar. Kabuk kırılınca altındaki yağ ortaya çıkar. Sonraki eşleşme ya da güç etkisiyle açık yağı ayrıca temizlemen gerekir; bunlar iki ayrı hedeftir.",
+      "bodyEn": "An adjacent match or power hit breaks the frozen shell and reveals the oil underneath. A later match or power must clear that exposed oil. The shell and floor oil are separate objectives.",
+      "stepsTr": [
+        "Önce kabuğa vurulur",
+        "Kabuk kırılır; yağ ortaya çıkar",
+        "Yeni eşleşme açık yağı temizler"
+      ],
+      "stepsEn": [
+        "Hit the shell first",
+        "The shell breaks and reveals oil",
+        "A later match clears the oil"
+      ]
+    },
+    {
+      "demo": "Motor",
+      "titleTr": "MOTOR",
+      "titleEn": "ENGINE",
+      "bodyTr": "Motorun yanında yapılan her ayrı eşleşme dolumuna bir vuruş ekler. Güçler de motoru doldurabilir. Varsayılan beş vuruşta patlar: kendi alanını ve çevresindeki şekerlerle açık yağı temizler; pas ve kabuğa bir darbe verir.",
+      "bodyEn": "Each separate match beside an engine adds one hit. Powers can charge it too. By default, five hits trigger an explosion that clears its footprint, surrounding candies and exposed oil, and damages rust and shells.",
+      "stepsTr": [
+        "Eşleşmeler dolumu artırır",
+        "Motor dolunca patlar",
+        "Çevresi temizlenir; engeller darbe alır"
+      ],
+      "stepsEn": [
+        "Matches charge the engine",
+        "A full engine explodes",
+        "Its surroundings clear and obstacles take a hit"
+      ]
+    },
+    {
+      "demo": "ComboRay",
+      "titleTr": "İKİ FİŞEK",
+      "titleEn": "TWO FIREWORKS",
+      "bodyTr": "Yan yana iki fişeği birbirleriyle değiştirmen, varılan karede hem bir satırı hem bir sütunu temizler. İki gücü birleştirmek bir hamle harcar; yeniden eşleşme oluşturman gerekmez.",
+      "bodyEn": "Swap two adjacent fireworks to clear both a row and a column through the destination. Combining powers costs one move and does not require a normal match.",
+      "stepsTr": [
+        "Yan yana iki fişek var",
+        "Fişekleri birbiriyle değiştir",
+        "Bir satır ve bir sütun temizlenir"
+      ],
+      "stepsEn": [
+        "Find two adjacent fireworks",
+        "Swap them with each other",
+        "A row and a column clear"
+      ]
+    },
+    {
+      "demo": "ComboHammer",
+      "titleTr": "İKİ ÇEKİÇ",
+      "titleEn": "TWO HAMMERS",
+      "bodyTr": "Yan yana iki çekici birbirleriyle değiştirmen, varılan kareye büyük bir çekiç darbesi indirir. Darbenin ardından 5x5 alan temizlenir. Tahtanın kenarında kalan etki alanı tahta sınırında biter.",
+      "bodyEn": "Swap two adjacent hammers to summon a giant hammer at the destination. Its strike clears a 5x5 area, clipped by the board edges.",
+      "stepsTr": [
+        "Yan yana iki çekiç var",
+        "Çekiçleri birbiriyle değiştir",
+        "Büyük darbe 5x5 alanı temizler"
+      ],
+      "stepsEn": [
+        "Find two adjacent hammers",
+        "Swap them with each other",
+        "A giant strike clears a 5x5 area"
+      ]
+    },
+    {
+      "demo": "ComboMixed",
+      "titleTr": "ÇEKİÇ VE FİŞEK",
+      "titleEn": "HAMMER + FIREWORK",
+      "bodyTr": "Yan yana çekiç ve fişeği değiştirmen, fişeğin yönünde üç tam satırı veya sütunu temizler. Bu gösterimde yatay fişek üç satırı temizliyor.",
+      "bodyEn": "Swap an adjacent hammer and firework to clear three full rows or columns in the firework direction. This example uses a horizontal firework to clear three rows.",
+      "stepsTr": [
+        "Çekiç ve fişek yan yana",
+        "İki gücü birbiriyle değiştir",
+        "Fişeğin yönünde üç sıra temizlenir"
+      ],
+      "stepsEn": [
+        "Find the adjacent powers",
+        "Swap them with each other",
+        "Three lines clear in the firework direction"
+      ]
+    },
+    {
+      "demo": "ComboConvertRay",
+      "titleTr": "MIKNATIS VE FİŞEK",
+      "titleEn": "MAGNET + FIREWORK",
+      "bodyTr": "Mıknatısı yanındaki fişekle değiştirmen, seçilen renkten en fazla on normal şekeri fişeğe dönüştürür. Oluşan fişekler farklı yönlerde çalışır. Bu dönüşüm araç kredisi kazandırmaz.",
+      "bodyEn": "Swap an adjacent magnet and firework to turn up to ten normal candies of one selected color into fireworks. They activate in mixed directions. These conversions do not earn tool credits.",
+      "stepsTr": [
+        "Mıknatıs ve fişek yan yana",
+        "Bir renkteki şekerler fişeğe dönüşür",
+        "Yeni fişekler çalışır"
+      ],
+      "stepsEn": [
+        "Find the adjacent powers",
+        "One color turns into fireworks",
+        "The new fireworks activate"
+      ]
+    },
+    {
+      "demo": "ComboConvertHammer",
+      "titleTr": "MIKNATIS VE ÇEKİÇ",
+      "titleEn": "MAGNET + HAMMER",
+      "bodyTr": "Mıknatısı yanındaki çekiçle değiştirmen, seçilen renkten en fazla on normal şekeri çekice dönüştürür. Yeni çekiçler çalışarak çevrelerini temizler. Bu dönüşüm araç kredisi kazandırmaz.",
+      "bodyEn": "Swap an adjacent magnet and hammer to turn up to ten normal candies of one selected color into hammers. They activate and clear their surroundings. These conversions do not earn tool credits.",
+      "stepsTr": [
+        "Mıknatıs ve çekiç yan yana",
+        "Bir renkteki şekerler çekice dönüşür",
+        "Yeni çekiçler çalışır"
+      ],
+      "stepsEn": [
+        "Find the adjacent powers",
+        "One color turns into hammers",
+        "The new hammers activate"
+      ]
+    },
+    {
+      "demo": "ComboMagnet",
+      "titleTr": "İKİ MIKNATIS",
+      "titleEn": "TWO MAGNETS",
+      "bodyTr": "Yan yana iki mıknatısı birbirleriyle değiştirmen, bütün tahtayı satır satır temizler. Etki, üstten başlayıp her satırda yön değiştirerek ilerler. Engeller kendi darbe ve katman kurallarına göre etkilenir.",
+      "bodyEn": "Swap two adjacent magnets to sweep the entire board row by row. The effect starts at the top and reverses direction on each row. Obstacles still follow their own damage and layer rules.",
+      "stepsTr": [
+        "Yan yana iki mıknatıs var",
+        "Mıknatısları birbiriyle değiştir",
+        "Tahta satır satır temizlenir"
+      ],
+      "stepsEn": [
+        "Find two adjacent magnets",
+        "Swap them with each other",
+        "The board clears row by row"
+      ]
+    },
+    {
+      "demo": "Credits",
+      "titleTr": "KREDİ VE ARAÇ STOĞU",
+      "titleEn": "CREDITS AND STOCK",
+      "bodyTr": "Eşleşmeyle oluşturduğun her güç kendi aracına bir kredi verir. Dört fişek, dört çekiç veya beş mıknatıs kredisi bir stok kazandırır. Stoktan yerleştirme ve mıknatıs dönüşümleri kredi vermez.",
+      "bodyEn": "Each power created by a match earns one credit for its tool. Four firework credits, four hammer credits or five magnet credits award one stock tool. Shelf placement and magnet conversions earn no credits.",
+      "stepsTr": [
+        "Eşleşmeyle güç oluşturulur",
+        "İlgili aracın kredisi artar",
+        "Eşik dolunca stok +1 olur"
+      ],
+      "stepsEn": [
+        "Create a power with a match",
+        "Its tool credit increases",
+        "Reaching the threshold adds one stock tool"
+      ]
+    },
+    {
+      "demo": "Attempt",
+      "titleTr": "YENİDEN BAŞLATMA",
+      "titleEn": "RESTARTING A LEVEL",
+      "bodyTr": "Kazandığın turun araç kredileri kalıcı olur. Yeniden başlattığın veya yarıda bıraktığın turun yeni kredileri ve bunlardan gelen stok geri alınır. Harcadığın stok araçları geri verilmez; öğretici hediyesi tekrar alınamaz.",
+      "bodyEn": "Credits earned in a won round become permanent. Restarting or abandoning a round removes its new credits and stock earned from them. Used stock tools are not refunded, and tutorial gifts cannot be collected again.",
+      "stepsTr": [
+        "Bu turda yeni kredi oluşur",
+        "Yeniden başlatma turu sıfırlar",
+        "Yeni kredi geri alınır"
+      ],
+      "stepsEn": [
+        "The attempt earns a new credit",
+        "Restarting resets the attempt",
+        "The new credit is removed"
+      ]
+    },
+    {
+      "demo": "Wheel",
+      "titleTr": "HAMLE KASASI VE ÇARK",
+      "titleEn": "MOVE BANK AND WHEEL",
+      "bodyTr": "Çark, 10. bölümü tamamlayınca açılır. Kazandığın bölümlerde kalan hamleler kasaya eklenir. On hamleyle bir kez çevirip araç kazanabilirsin. Boş dilim ödül vermez; sonraki dönüş yine on hamle ister.",
+      "bodyEn": "The wheel unlocks after level 10. Unused moves from won levels go into the bank. Spend ten banked moves for one spin and a chance to win tools. An empty sector gives no reward; another spin still costs ten moves.",
+      "stepsTr": [
+        "Kalan hamleler kasada birikir",
+        "Bir dönüş on hamle harcar",
+        "Çark bir ödül diliminde durur"
+      ],
+      "stepsEn": [
+        "Unused moves accumulate in the bank",
+        "One spin spends ten moves",
+        "The wheel stops on a reward sector"
+      ]
+    },
+    {
+      "demo": "Goals",
+      "titleTr": "BÖLÜM HEDEFLERİ",
+      "titleEn": "LEVEL OBJECTIVES",
+      "bodyTr": "Üst paneldeki bütün hedefleri hamlelerin bitmeden tamamlaman gerekir. Motoru patlatmak tek başına bölümü bitirmez. Son hamlede güçler ve düşüşler çözülmeden sonuç verilmez. İlk bölümün hedefi on geçerli hamledir.",
+      "bodyEn": "Complete every top-panel objective before running out of moves. Exploding an engine alone does not finish a level. The final move fully resolves before the result appears. Level one asks for ten valid moves.",
+      "stepsTr": [
+        "Üstteki hedefleri incele",
+        "Her hedefin sayacı dolar",
+        "Bütün hedefler bitince kazanırsın"
+      ],
+      "stepsEn": [
+        "Check the top-panel objectives",
+        "Each objective counter fills",
+        "Completing every goal wins the level"
+      ]
+    },
+    {
+      "demo": "Map",
+      "titleTr": "HARİTA VE DEVAM",
+      "titleEn": "MAP AND CONTINUE",
+      "bodyTr": "Haritayı yukarı veya aşağı kaydırabilirsin. Açık bir bölümü seçtikten sonra OYNA düğmesiyle başlarsın. İlk on bölümün devam akışı öğretimi sürdürür; 11 ve sonrasında sonraki bölüm seçili halde ana ekran açılır.",
+      "bodyEn": "Scroll the map up or down, select an unlocked level and press PLAY. The first ten levels continue the teaching flow. From level 11 onward, NEXT returns to the home screen with the next level selected.",
+      "stepsTr": [
+        "Harita yukarı veya aşağı kayar",
+        "Açık bir bölüm seçilir",
+        "OYNA ile bölüm başlar"
+      ],
+      "stepsEn": [
+        "Scroll the map up or down",
+        "Select an unlocked level",
+        "Press PLAY to start"
+      ]
+    },
+    {
+      "demo": "Tutorial",
+      "titleTr": "ÖĞRETİCİ VE AYARLAR",
+      "titleEn": "TUTORIALS AND SETTINGS",
+      "bodyTr": "Bitirdiğin öğreticili bölüme yeniden girerken öğreticiyi tekrar görmek isteyip istemediğin sorulur. Oyun içi ayarlardan o bölümün öğreticisini atlayabilirsin. Ses, müzik ve dil tercihleri ayarlardan yönetilir; dil değişimi onay ister.",
+      "bodyEn": "Revisiting a completed tutorial level asks whether you want to see its teaching again. In-game settings let you skip that level’s tutorial. Settings also manage sound, music preference and language; changing language requires confirmation.",
+      "stepsTr": [
+        "Tamamlanan öğreticiyi tekrar sorar",
+        "Evet veya Hayır seçilir",
+        "Ayarlar öğreticiyi atlamanı sağlar"
+      ],
+      "stepsEn": [
+        "A completed tutorial asks on replay",
+        "Choose Yes or No",
+        "Settings can skip the tutorial"
+      ]
+    }
+  ]
+}

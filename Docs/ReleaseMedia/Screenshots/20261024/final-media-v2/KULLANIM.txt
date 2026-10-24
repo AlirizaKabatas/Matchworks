@@ -1,0 +1,26 @@
+MATCHWORKS — ITCH.IO YÜKLEME PAKETİ
+
+KAPAK / COVER IMAGE alanı:
+00-cover-1260x1000.png
+
+SCREENSHOTS alanına aşağıdaki sırayla:
+01-gameplay-level-08.png — Bölüm 8: motor, paslı parçalar, mıknatıs.
+02-gameplay-level-07.png — Bölüm 7: donmuş yağ ve çekiç.
+03-level-map.png — Bölüm haritası.
+04-tutorial-level-04.png — Bölüm 4: oyun içi fişek öğreticisi.
+05-achievements.png — Başarımlar.
+06-reward-wheel.png — Ödül çarkı.
+
+Ek SS çekmek gerekmiyor. Daha kısa galeri istersen ilk 4ü kullanabilirsin.
+
+SSler yalnız dış Unity alanlarından kırpıldı; boyutlandırma, renk değişikliği,
+yapay içerik ekleme yapılmadı. Yeni 3 SS742×1312, kaynak kırpımıyla aynı
+piksel verisine sahip PNGlerdir. Önceki başarımlar kaynağı742×1308dir.
+
+Kapak mevcut açılış logo/araç/şeker/dişli/fon assetlerinin yatay yerleşimidir.
+Aynı oranlar korunarak ölçeklenmiştir; yeni AI görseli üretilmedi.
+1260×1000, itch.io önerisi630×500 ile aynı315:250 oranındadır.
+Kaynak: https://itch.io/docs/creators/getting-started
+
+Bu yeni paket önceki toolbar hatalı oynanış SSlerinin yerine geçer.
+manifest.json yalnız kaynak/doğrulama kaydıdır; itch.ioya yüklemeyin.

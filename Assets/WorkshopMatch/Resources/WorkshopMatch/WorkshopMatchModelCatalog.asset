@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65912efbd006d4352a96441d49d8baa6, type: 3}
+  m_Name: WorkshopMatchModelCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::WorkshopMatch.WorkshopMatchModelCatalog
+  Candies:
+  - {fileID: 919132149155446097, guid: f3c0d5efdc59a45d6923b4676200209d, type: 3}
+  - {fileID: 919132149155446097, guid: 656850d13e58a415bbb3b75b2a34a137, type: 3}
+  - {fileID: 919132149155446097, guid: 686d7d5d8643c4b52a025414191eb938, type: 3}
+  - {fileID: 919132149155446097, guid: 29263c0d23d85498596e0b8ca5f8f67a, type: 3}
+  - {fileID: 919132149155446097, guid: cac758c3d5d3144fab921d38976858df, type: 3}
+  Bolt: {fileID: 919132149155446097, guid: 65e0c8bbff8f5483fbc3ddd3a6ca8d51, type: 3}
+  BoltScrew: {fileID: 919132149155446097, guid: b962a67d6c19347bd99da9e3f78931aa, type: 3}
+  Motor: {fileID: 919132149155446097, guid: d446722da7da643118de0519ca8c3ec2, type: 3}
+  FrozenGrease: {fileID: 919132149155446097, guid: 2e40b8e4ac7b5494488ee10bbfbaf019, type: 3}
+  BoardCell: {fileID: 919132149155446097, guid: ed062541ed9d44e17b661e59837058c6, type: 3}
+  OilJoinedSurface: {fileID: 919132149155446097, guid: 9921c454e76674225a67f9f637fc1f5b, type: 3}
+  Ray: {fileID: 919132149155446097, guid: 82deef027c85649cebe5662a9ba90f5b, type: 3}
+  Solvent: {fileID: 919132149155446097, guid: 5099e5fec74c8453a8e5fe311d9a1c43, type: 3}
+  Magnet: {fileID: 919132149155446097, guid: eb083750f56d24917b004c3dbd5ba06b, type: 3}
+  FactoryTop: {fileID: 919132149155446097, guid: 8ddc523365c334f948d8eb0ac330b4f7, type: 3}
+  Hammer: {fileID: 919132149155446097, guid: e612a03811b564db5b3907b5544ac688, type: 3}
+  ToolIcons:
+  - {fileID: 2800000, guid: 0f4fe673ba15346c7b9b8031d21337ee, type: 3}
+  - {fileID: 2800000, guid: 6d6e9aff97ce74f8a9425b3e0a9d63b1, type: 3}
+  - {fileID: 2800000, guid: 9aaac69be3af94d6fa8af6b09a5db9ea, type: 3}
+  - {fileID: 2800000, guid: c38c29a931a444ea591314acf8e393dd, type: 3}

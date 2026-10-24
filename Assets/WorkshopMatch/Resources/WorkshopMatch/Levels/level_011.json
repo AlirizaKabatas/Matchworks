@@ -1,0 +1,271 @@
+﻿{
+    "Version": 1,
+    "Id": "level_011",
+    "DisplayTitle": "Taslak 11 — Ali düzenlemesi bekleniyor",
+    "IsDraft": false,
+    "Width": 8,
+    "Height": 8,
+    "Moves": 28,
+    "ColorCount": 5,
+    "SpawnSeed": 766786,
+    "ChapterMachineId": "prototype",
+    "MotorRotated": false,
+    "Cells": [
+        {
+            "X": 2,
+            "Y": 5,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 4,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 5,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 6,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 7,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 7,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 6,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 4,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 1,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 0,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 0,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 1,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 7,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 6,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 5,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 4,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 2,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 1,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 0,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 0,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 5,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 1,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 7,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 6,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 4,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 3,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 0,
+            "Y": 2,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+# Unity generated data
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/MemoryCaptures/
+/Recordings/
+/Data/
+/output/
+/tmp/
+.vs/
+.vscode/
+.idea/
+**/bin/
+**/obj/
+**/obj-runtime/
+*.csproj.user
+/*.csproj
+/*.sln
+/*.slnx
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.DS_Store
+Thumbs.db
+*.blend1
+*.blend2
+# Local or generated publication archives
+*.zip
+*.tar.gz
+# Credentials and local tooling
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.keystore
+.agents/
+.codex/
+# Source-only Pixabay audio cannot be redistributed standalone.
+/Assets/WorkshopMatch/Resources/WorkshopMatch/Audio/opening_clockwork.mp3
+# Local provenance includes machine paths; public credits are CREDITS.md.
+/Docs/Cleanup_20261024.json
+/Docs/wizard_music_20261019.json

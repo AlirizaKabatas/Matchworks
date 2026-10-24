@@ -1,0 +1,94 @@
+﻿{
+    "Version": 1,
+    "Id": "level_010",
+    "DisplayTitle": "Taslak 10 — Atölye Finali",
+    "IsDraft": false,
+    "Width": 8,
+    "Height": 8,
+    "Moves": 15,
+    "ColorCount": 5,
+    "SpawnSeed": 3102027,
+    "ChapterMachineId": "factory_stage_2",
+    "Cells": [
+        {
+            "X": 0,
+            "Y": 7,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 7,
+            "Y": 7,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 7,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 4,
+            "Content": 2,
+            "ObstacleState": 5,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 2,
+            "Y": 4,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 3,
+            "Content": 3,
+            "ObstacleState": 1,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 1,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 5,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 7,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        }
+    ]
+}

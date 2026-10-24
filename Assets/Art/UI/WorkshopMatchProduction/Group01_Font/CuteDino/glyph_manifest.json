@@ -1,0 +1,11 @@
+{
+  "source_font": "Assets/cute_dino_2/Cute Dino.ttf",
+  "cell_size": 112,
+  "columns": 12,
+  "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789/+:=-!?.;",
+  "indexing": "left-to-right, top-to-bottom; transparent atlas",
+  "styles": [
+    "dark",
+    "cream"
+  ]
+}

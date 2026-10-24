@@ -1,0 +1,159 @@
+﻿{
+    "Version": 1,
+    "Id": "level_005",
+    "DisplayTitle": "Taslak 5 — İlk Motor",
+    "IsDraft": false,
+    "Width": 8,
+    "Height": 8,
+    "Moves": 11,
+    "ColorCount": 5,
+    "SpawnSeed": 28092026,
+    "ChapterMachineId": "factory_stage_1",
+    "MotorRotated": true,
+    "Cells": [
+        {
+            "X": 7,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 7,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 7,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 5,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 5,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 7,
+            "Y": 3,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 3,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 5,
+            "Y": 3,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 5,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 2,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 3,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        }
+    ]
+}

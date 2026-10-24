@@ -1,0 +1,114 @@
+﻿{
+    "Version": 1,
+    "Id": "level_015",
+    "DisplayTitle": "Taslak 12 — Ali düzenlemesi bekleniyor",
+    "IsDraft": false,
+    "Width": 8,
+    "Height": 8,
+    "Moves": 20,
+    "ColorCount": 5,
+    "SpawnSeed": 25092026,
+    "ChapterMachineId": "prototype",
+    "MotorRotated": false,
+    "Cells": [
+        {
+            "X": 1,
+            "Y": 0,
+            "Content": 2,
+            "ObstacleState": 5,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 1
+        },
+        {
+            "X": 0,
+            "Y": 0,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 0
+        },
+        {
+            "X": 0,
+            "Y": 1,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 0
+        },
+        {
+            "X": 0,
+            "Y": 2,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 0
+        },
+        {
+            "X": 1,
+            "Y": 2,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 0
+        },
+        {
+            "X": 2,
+            "Y": 2,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 0
+        },
+        {
+            "X": 3,
+            "Y": 2,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 0
+        },
+        {
+            "X": 4,
+            "Y": 2,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 0
+        },
+        {
+            "X": 4,
+            "Y": 1,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 0
+        },
+        {
+            "X": 4,
+            "Y": 0,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 0
+        },
+        {
+            "X": 6,
+            "Y": 0,
+            "Content": 2,
+            "ObstacleState": 5,
+            "Oil": false,
+            "CandyColor": -1,
+            "MotorOrientation": 2
+        }
+    ]
+}

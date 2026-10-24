@@ -1,0 +1,95 @@
+﻿{
+    "Version": 1,
+    "Id": "level_008",
+    "DisplayTitle": "Taslak 8 — Mıknatıs Eğitimi",
+    "IsDraft": false,
+    "Width": 8,
+    "Height": 8,
+    "Moves": 11,
+    "ColorCount": 5,
+    "SpawnSeed": 1231,
+    "ChapterMachineId": "prototype",
+    "MotorRotated": false,
+    "Cells": [
+        {
+            "X": 3,
+            "Y": 0,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": false,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 0,
+            "Content": 1,
+            "ObstacleState": 2,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 5,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 6,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 7,
+            "Y": 1,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 7,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 5,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 0,
+            "Content": 0,
+            "ObstacleState": 0,
+            "Oil": true,
+            "CandyColor": -1
+        },
+        {
+            "X": 4,
+            "Y": 4,
+            "Content": 2,
+            "ObstacleState": 5,
+            "Oil": false,
+            "CandyColor": -1
+        }
+    ]
+}

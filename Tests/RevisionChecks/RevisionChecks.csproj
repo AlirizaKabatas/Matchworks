@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net8.0</TargetFramework><OutputType>Exe</OutputType><EnableDefaultCompileItems>false</EnableDefaultCompileItems><LangVersion>9</LangVersion><DefineConstants>$(DefineConstants);DEVELOPMENT_BUILD</DefineConstants></PropertyGroup>
+  <ItemGroup><Compile Include="../../Assets/WorkshopMatch/Scripts/Match3BoardModel*.cs"/><Compile Include="Program.cs"/><Compile Include="GravityChecks.cs"/><Compile Include="../../Assets/WorkshopMatch/Scripts/TutorialPresentationRules.cs"/><Compile Include="TutorialChecks.cs"/><Compile Include="../../Assets/WorkshopMatch/Scripts/TrainingLevelPolicy.cs"/><Compile Include="../../Assets/WorkshopMatch/Scripts/TutorialMovePlanner.cs"/></ItemGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/AchievementProgress.cs"/>
+    <Compile Include="AchievementChecks.cs"/>
+    <Compile Include="FallAnimationChecks.cs"/>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/FallAnimationPlan.cs"/>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/OpeningScreenTiming.cs"/>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/OpeningScreenLayout.cs"/>
+    <Compile Include="OpeningScreenChecks.cs"/>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/HomeMenuInteraction.cs"/>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/WorkshopMatchScreenLayout.cs"/>
+    <Compile Include="HomeMenuInteractionChecks.cs"/>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/GameLanguage.cs"/>
+    <Compile Include="LanguageChecks.cs"/>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/LevelDefinition.cs"/>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/ToolProgress.cs"/>
+    <Reference Include="/Applications/Unity/Hub/Editor/6000.5.5f1/Unity.app/Contents/Resources/Scripting/Managed/UnityEngine/UnityEngine.CoreModule.dll"/>
+    <Reference Include="/Applications/Unity/Hub/Editor/6000.5.5f1/Unity.app/Contents/Resources/Scripting/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"/>
+  </ItemGroup>
+</Project>

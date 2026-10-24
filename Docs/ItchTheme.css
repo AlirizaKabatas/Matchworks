@@ -1,0 +1,56 @@
+/* Matchworks — paste into itch.io Edit theme > Custom CSS.
+   Keep Screenshots set to Sidebar. Draft: preview on the actual page before saving.
+   No external fonts, images or scripts are loaded. */
+body {
+  background-color: #163b43;
+}
+.inner_column {
+  background-color: #fff7e6;
+  color: #4b321d;
+  border-radius: 18px;
+  box-shadow: 0 14px 48px rgba(0,0,0,.24);
+  overflow: hidden;
+}
+.formatted_description {
+  line-height: 1.65;
+}
+.formatted_description h1,
+.formatted_description h2,
+.formatted_description h3 {
+  color: #4b321d;
+  line-height: 1.25;
+}
+.formatted_description h2 {
+  margin-top: 1.4em;
+  padding-bottom: .35em;
+  border-bottom: 2px solid #e5c889;
+}
+.formatted_description a {
+  color: #087f8c;
+  text-decoration: underline;
+  text-underline-offset: .16em;
+}
+.formatted_description strong { color: #67451f; }
+/* A compact grid avoids six full-height portrait images in one long column.
+   The game iframe is deliberately untouched. */
+.screenshot_list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 10px;
+}
+.screenshot_list .screenshot {
+  margin: 0;
+  min-width: 0;
+}
+.screenshot_list img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+  box-shadow: 0 3px 10px rgba(75,50,29,.18);
+}
+@media (max-width: 600px) {
+  .inner_column { border-radius: 0; }
+  .screenshot_list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

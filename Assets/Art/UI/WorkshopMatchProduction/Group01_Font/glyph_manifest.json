@@ -1,0 +1,11 @@
+{
+  "source_font": "Nunito-Variable.ttf",
+  "cell_size": 112,
+  "columns": 12,
+  "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZÇĞİÖŞÜabcdefghijklmnopqrstuvwxyzçğıöşü0123456789/+×:-!?",
+  "indexing": "left-to-right, top-to-bottom; transparent atlas",
+  "styles": [
+    "dark",
+    "cream"
+  ]
+}
