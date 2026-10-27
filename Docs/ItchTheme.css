@@ -1,56 +1,98 @@
-/* Matchworks — paste into itch.io Edit theme > Custom CSS.
-   Keep Screenshots set to Sidebar. Draft: preview on the actual page before saving.
-   No external fonts, images or scripts are loaded. */
+/* Matchworks itch.io theme — 27 October 2026.
+   Replace the previous Custom CSS completely. Screenshots must remain Sidebar.
+   Cover image stays unchanged; upload the portrait poster to Embed BG only. */
 body {
-  background-color: #163b43;
+  background: #159cb5;
+  color: #573b23;
 }
 .inner_column {
-  background-color: #fff7e6;
-  color: #4b321d;
+  width: 1060px !important;
+  max-width: calc(100% - 32px) !important;
+  background: #fff9ed;
+  color: #573b23;
+  border: 1px solid #e2c990;
   border-radius: 18px;
-  box-shadow: 0 14px 48px rgba(0,0,0,.24);
+  box-shadow: 0 14px 44px rgba(9, 74, 90, .22);
   overflow: hidden;
 }
-.formatted_description {
-  line-height: 1.65;
+/* Only the launch poster is resized. The running game's iframe is untouched. */
+.html_embed_widget {
+  background: linear-gradient(135deg, #53cde1, #12aac5);
+  border-bottom: 3px solid #e9c36e;
 }
+.html_embed_widget .game_frame.game_pending {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #10b6d0;
+}
+.html_embed_widget .load_iframe_btn {
+  background: #fff6df;
+  color: #5b3b1d;
+  border: 2px solid #e6b955;
+  border-radius: 14px;
+  box-shadow: 0 5px 0 rgba(91, 59, 29, .18);
+  font-weight: 700;
+}
+.columns {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 30px;
+  padding: 30px !important;
+}
+.columns > .left_col,
+.columns > .right_col {
+  float: none !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-width: 0;
+}
+.formatted_description { line-height: 1.65; }
 .formatted_description h1,
 .formatted_description h2,
 .formatted_description h3 {
-  color: #4b321d;
+  color: #5b3b1d;
   line-height: 1.25;
 }
 .formatted_description h2 {
-  margin-top: 1.4em;
+  font-size: 1.18em;
+  margin-top: 1.35em;
   padding-bottom: .35em;
-  border-bottom: 2px solid #e5c889;
+  border-bottom: 2px solid #e6d4ac;
 }
-.formatted_description a {
-  color: #087f8c;
-  text-decoration: underline;
-  text-underline-offset: .16em;
-}
-.formatted_description strong { color: #67451f; }
-/* A compact grid avoids six full-height portrait images in one long column.
-   The game iframe is deliberately untouched. */
+.formatted_description h2:first-child { margin-top: 0; }
+.formatted_description a { color: #007b91; text-decoration: underline; }
+.formatted_description strong { color: #745022; }
+.formatted_description li { margin-bottom: .35em; }
 .screenshot_list {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
   align-items: start;
-  gap: 10px;
+  width: 100% !important;
+  margin: 0 !important;
 }
-.screenshot_list .screenshot {
-  margin: 0;
-  min-width: 0;
-}
-.screenshot_list img {
+.screenshot_list > a {
   display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 9px;
-  box-shadow: 0 3px 10px rgba(75,50,29,.18);
+  width: auto !important;
+  min-width: 0;
+  margin: 0 !important;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(87, 59, 35, .16);
 }
-@media (max-width: 600px) {
-  .inner_column { border-radius: 0; }
+.screenshot_list img.screenshot {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+}
+@media (max-width: 720px) {
+  .inner_column { max-width: 100% !important; border-radius: 0; }
+  .columns { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 20px !important; }
   .screenshot_list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

@@ -1,0 +1,16 @@
+MATCHWORKS — yalnız kullanıcı uygulayacak
+
+1) Onayladığın Cover image değişmeyecek: 00-cover-1260x1000.png.
+2) Edit theme > Embed BG: mevcut yanlış oranlı görseli Remove image ile kaldır;
+   embed-poster-1080x1920.png dosyasını buraya yükle. Cover veya Banner alanına değil.
+3) Renkler: BG #159CB5, BG2 #FFF9ED, Text #573B23, Link #007B91.
+4) Font Lato, Size Large, Screenshots Sidebar.
+5) Custom CSS içindeki eski metnin TAMAMINI sil; matchworks-itch.css içeriğini yapıştır.
+   CSS posterin tamamını gösterir ve 6 SSyi 2 sütun / 3 satır yapar.
+6) Edit game > açıklama editörünün HTML/source moduna description.html içeriğini yapıştır.
+7) Oyun embed boyutu 405×720 kalsın. Auto-start kapalı, fullscreen açık, scrollbar kapalı.
+8) Önizle; logo tamamen görünüyorsa ve SSler iki sütundaysa Save ile kaydet.
+
+Canlı sayfada ajan tarafından hiçbir tema/metin değişikliği kaydedilmedi.
+CSS mevcut sayfanın okunan DOM sınıflarına göre yazıldı; kullanıcı önizleme kabulü gerekir.
+Orijinal onaylı kapak korunur; yeni poster yalnız mevcut açılış katmanlarından yerleştirildi.
