@@ -22,7 +22,7 @@ namespace WorkshopMatch
         private bool WheelTeaching=>homeLesson>=HomeLesson.WheelOpen;
         private bool HomeInputReady=>!nextLevelTransition&&!wheelRewardAnimating&&homeLessonFrame!=Time.frameCount&&(homeLesson==HomeLesson.Off||Time.unscaledTime-homeLessonAt>=.4f);
         private bool HomeAllowsNode(int index)=>HomeInputReady&&(homeLesson==HomeLesson.Off||(homeLesson==HomeLesson.SelectTwo&&index==1));
-        private void SetHomeLesson(HomeLesson lesson){if(lesson==HomeLesson.SwipeMap)tutorialMapSwipes=0;homeLesson=lesson;homeLessonAt=Time.unscaledTime;homeLessonFrame=Time.frameCount;uiTouchReleaseFrame=-1;}
+        private void SetHomeLesson(HomeLesson lesson){if(lesson==HomeLesson.SwipeMap){tutorialMapSwipes=0;mapSwipe.Reset();}homeLesson=lesson;homeLessonAt=Time.unscaledTime;homeLessonFrame=Time.frameCount;uiTouchReleaseFrame=-1;}
         private void UpdateHomeMapLessonInput()
         {
             if(screen!=AppScreen.Menu || (homeLesson!=HomeLesson.OpenMap&&homeLesson!=HomeLesson.SelectTwo) || !HomeInputReady ||

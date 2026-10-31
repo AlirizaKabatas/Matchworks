@@ -227,12 +227,14 @@ namespace WorkshopMatch
         public void ConfigureMoveGoal(int target)
         { MoveGoal = Math.Max(0,target); ValidMovesMade = 0; }
 
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         public void DebugAdjustMoves(int delta)
         {
             if (State != RoundState.Playing) return;
             MovesRemaining = (int)Math.Max(0L, Math.Min(int.MaxValue, (long)MovesRemaining + delta));
             EvaluateOutcome();
         }
+#endif
         public bool IsStable => FindMatchGroups().Count == 0;
         public int GetColor(int x, int y) => colors[x, y];
         public CellContent GetContent(int x, int y) => contents[x, y];
@@ -351,6 +353,7 @@ namespace WorkshopMatch
             });
         }
 
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         internal SwapResult DebugActivatePower(Cell target, SpecialKind kind)
         {
             if (!objectivesSealed) SealObjectives();
@@ -366,6 +369,7 @@ namespace WorkshopMatch
             FinishTurn();
             return new SwapResult(true, removed, cascades + 1, steps);
         }
+#endif
 
         public SwapResult TrySwap(Cell first, Cell second)
         {
@@ -574,6 +578,7 @@ namespace WorkshopMatch
             return hash;
         }
 
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         internal void DebugResolveGroup(params Cell[] group)
         {
             HashSet<int> indices = new();
@@ -585,6 +590,7 @@ namespace WorkshopMatch
             ExplodeReadyMotor(new List<ResolutionStep>(), null);
             EvaluateOutcome();
         }
+#endif
 
         internal void DebugSetCandy(Cell cell, int color)
         {
@@ -594,6 +600,7 @@ namespace WorkshopMatch
             specials[cell.X, cell.Y] = SpecialKind.None;
         }
 
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         internal SpecialKind DebugResolveClassifiedGroup(Cell preferred, params Cell[] group)
         {
             HashSet<int> indices = new();
@@ -603,6 +610,7 @@ namespace WorkshopMatch
             ResolveMatchGroup(indices, preferred, true);
             return kind;
         }
+#endif
 
         internal void DebugPlaceSpecial(Cell cell, SpecialKind kind, int color = 0)
         {
@@ -610,11 +618,13 @@ namespace WorkshopMatch
             specials[cell.X, cell.Y] = kind;
         }
 
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         internal int DebugActivateSpecial(Cell cell, int selectedColor)
         {
             List<ResolutionStep> steps = new();
             return ActivateSpecial(cell, specials[cell.X, cell.Y], selectedColor, steps);
         }
+#endif
 
         private void GeneratePlayableBoard()
         {

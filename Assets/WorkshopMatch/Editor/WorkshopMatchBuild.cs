@@ -9,7 +9,7 @@ namespace WorkshopMatch.Editor
 {
     public static class WorkshopMatchBuild
     {
-        private const string DefaultWebGlOutput = "Build/WebGL";
+        private const string DefaultWebGlOutput = "Build/WebGL-Release-1.0.1";
         private const string ResponsiveShell = @"<meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
 <style id='matchworks-responsive-shell'>
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111923}
@@ -39,7 +39,7 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111923}
 
             PlayerSettings.companyName = "Ali Portfolio";
             PlayerSettings.productName = "Matchworks";
-            PlayerSettings.bundleVersion = "1.0.0";
+            PlayerSettings.bundleVersion = "1.0.1";
             PlayerSettings.defaultScreenWidth = 540;
             PlayerSettings.defaultScreenHeight = 960;
             PlayerSettings.resizableWindow = true;
@@ -47,6 +47,9 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111923}
             PlayerSettings.WebGL.compressionFormat = startupTest ? WebGLCompressionFormat.Disabled : WebGLCompressionFormat.Gzip;
             PlayerSettings.WebGL.decompressionFallback = !startupTest;
             PlayerSettings.WebGL.threadsSupport = false;
+            EditorUserBuildSettings.development = startupTest;
+            EditorUserBuildSettings.allowDebugging = false;
+            EditorUserBuildSettings.connectProfiler = false;
 
             BuildReport report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {

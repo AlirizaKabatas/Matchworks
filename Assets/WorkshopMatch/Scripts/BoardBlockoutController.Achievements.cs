@@ -15,7 +15,7 @@ namespace WorkshopMatch
                 achievementTracker=new AchievementTracker(AchievementProgressStore.Load());
                 // Legacy progression only proves the levels before the furthest unlocked node.
                 // It contains no evidence about stock use, production or the final level's win.
-                if(!existing&&PlayerPrefs.GetInt("WorkshopMatch.TestProgressOverride",0)==0)
+                if(!existing)
                     achievementTracker.ImportCompletedLevels(highestUnlockedLevel);
                 AchievementProgressStore.Save(achievementTracker.Snapshot);
                 return achievementTracker;

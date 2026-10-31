@@ -2,6 +2,8 @@
   <PropertyGroup><TargetFramework>net8.0</TargetFramework><OutputType>Exe</OutputType><EnableDefaultCompileItems>false</EnableDefaultCompileItems><LangVersion>9</LangVersion><DefineConstants>$(DefineConstants);DEVELOPMENT_BUILD</DefineConstants></PropertyGroup>
   <ItemGroup><Compile Include="../../Assets/WorkshopMatch/Scripts/Match3BoardModel*.cs"/><Compile Include="Program.cs"/><Compile Include="GravityChecks.cs"/><Compile Include="../../Assets/WorkshopMatch/Scripts/TutorialPresentationRules.cs"/><Compile Include="TutorialChecks.cs"/><Compile Include="../../Assets/WorkshopMatch/Scripts/TrainingLevelPolicy.cs"/><Compile Include="../../Assets/WorkshopMatch/Scripts/TutorialMovePlanner.cs"/></ItemGroup>
   <ItemGroup>
+    <Compile Include="../../Assets/WorkshopMatch/Scripts/PointerGestures.cs"/>
+    <Compile Include="PointerGestureChecks.cs"/>
     <Compile Include="../../Assets/WorkshopMatch/Scripts/AchievementProgress.cs"/>
     <Compile Include="AchievementChecks.cs"/>
     <Compile Include="FallAnimationChecks.cs"/>

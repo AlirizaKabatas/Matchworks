@@ -1,15 +1,36 @@
 {
+  "version": "1.0.1",
   "result": "Succeeded",
   "errors": 0,
-  "warnings": 346,
-  "warning_note": "Unity AI inference compute variants and WebGL toolchain warnings; no build errors.",
+  "warnings": 354,
+  "warning_note": "353 Unity/package shader warnings; 1 warning confirming runtime Pipeline is disabled.",
   "development": false,
+  "debugging": false,
+  "profiler": false,
   "threads": false,
+  "runtime_pipeline": false,
   "compression": "gzip with decompression fallback",
   "files": 17,
-  "unpacked_bytes": 141557335,
-  "zip_bytes": 141018265,
-  "sha256": "2b50251c8892da331d359f71e28d5e0e02f677447a9f43741659f9120882ab4e",
-  "source_checks": 1345,
-  "browser_runtime_test": "User will perform current itch.io smoke test; no agent visual gameplay test."
+  "unpacked_bytes": 141538325,
+  "zip_bytes": 140999479,
+  "sha256": "91a1b27bc8b4f50845ba6ab6d8c47489d7578abb8a23bcaa44b6da26337df1cd",
+  "source_checks": 1520,
+  "build_time_ms": 288961,
+  "zip": "Build/Matchworks-WebGL-1.0.1.zip",
+  "output": "Build/WebGL-Release-1.0.1",
+  "responsive_shell": true,
+  "zip_integrity": true,
+  "gzip_integrity": true,
+  "development_helpers_absent_from_release_assembly": true,
+  "editor_test_progress_reset": {
+    "selected_level": "level_001",
+    "unlocked_level": 1,
+    "tool_stock": {
+      "firework": 0,
+      "hammer": 0,
+      "magnet": 0
+    },
+    "settings_and_achievements_preserved": true
+  },
+  "browser_runtime_test": "Ali will upload and smoke-test the new build; no agent live gameplay/browser acceptance was performed."
 }

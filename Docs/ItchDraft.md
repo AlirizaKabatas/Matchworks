@@ -9,7 +9,7 @@ Page: https://alikb.itch.io/matchworks . Ali has configured visuals; do not over
 - Languages: English, Turkish.
 - Copy: ItchPageText.md; credits: root CREDITS.md.
 - Media: ReleaseMedia/Screenshots/20261024/Matchworks-Itch-Paket-v2.zip.00 is cover;01–06 gallery order.4 screenshots suffice for a compact page.
-- Upload: Build/Matchworks-WebGL-1.0.0.zip, mark “This file will be played in the browser”. Nolocalhost link.
+- Upload: Build/Matchworks-WebGL-1.0.1.zip, mark “This file will be played in the browser”. Nolocalhost link.
 - Embed: manually 405×720,auto-start off,fullscreen on,scrollbars off,SharedArrayBuffer off. Mobile Friendly only after an actual phone-browser test.
 - Theme: BG#163B43,BG2#FFF7E6,Text#4B321D,Link#087F8C,Lato Large. Auto may hide HTML screenshots; Sidebar stacks portrait images vertically. CSS polish awaits final page preview.
 - AI disclosure: graphics,music/sound and code used AI assistance; represent actual contributions accurately.

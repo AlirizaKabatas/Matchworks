@@ -44,6 +44,7 @@ partial class Program
     }
     static void Main()
     {
+        if(Environment.GetEnvironmentVariable("WORKSHOP_AUDIT_FALLS")=="1"){AuditHammerPace();return;}
         RunOpeningScreenChecks();
         RunLanguageChecks();
         RunHomeMenuInteractionChecks();

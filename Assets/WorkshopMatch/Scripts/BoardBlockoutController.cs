@@ -282,9 +282,14 @@ namespace WorkshopMatch
             if (screen == AppScreen.Map) UpdateMapDrag();
             if (settingsOpen || screen != AppScreen.Playing || resolving || hintAnimating || model == null ||
                 model.State != RoundState.Playing)
+            {
+                boardPointer.Reset();
                 return;
+            }
 
-            if (!TutorialRunning && !activeTool.HasValue && Time.unscaledTime - lastInteractionAt >= HintDelay &&
+            UpdateBoardPointer();
+            if (resolving) return;
+            if (!boardPointer.Tracking && !TutorialRunning && !activeTool.HasValue && Time.unscaledTime - lastInteractionAt >= HintDelay &&
                 model.TryFindBestHintSwap(out Match3BoardModel.Cell hintFrom, out Match3BoardModel.Cell hintTo))
             {
                 ClearSelection();
@@ -292,17 +297,6 @@ namespace WorkshopMatch
                 return;
             }
 
-            if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
-            {
-                Vector2 position = Touchscreen.current.primaryTouch.position.ReadValue();
-                if (!PointerOverHud(position)) TryHandlePointer(position);
-                return;
-            }
-            if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
-            {
-                Vector2 position = Mouse.current.position.ReadValue();
-                if (!PointerOverHud(position)) TryHandlePointer(position);
-            }
         }
 
         private void OnDestroy()
@@ -1199,17 +1193,6 @@ namespace WorkshopMatch
             }
         }
 
-        private void TryHandlePointer(Vector2 screenPosition)
-        {
-            if (boardCamera == null) return;
-            Ray ray = boardCamera.ScreenPointToRay(screenPosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, 30f) && coordinates.TryGetValue(hit.collider.transform, out Match3BoardModel.Cell coordinate))
-            {
-                ResetHintTimer();
-                HandleCellTap(coordinate);
-            }
-        }
-
         private void HandleCellTap(Match3BoardModel.Cell coordinate)
         {
             if (!TutorialAllowsCell(coordinate)) return;
@@ -1827,23 +1810,20 @@ namespace WorkshopMatch
                     renderer.SetPropertyBlock(block);clipped.Add((renderer,saved));
                 }
             }
-            foreach(var phase in FallAnimationPlan.Build(step.Falls,step.AfterFall))
+            var motions=FallAnimationPlan.Build(step.Falls);
+            float duration=0;
+            foreach(var motion in motions)duration=Mathf.Max(duration,motion.End);
+            for(float elapsed=0;elapsed<duration;)
             {
-                float longest=0f,entryLongest=0f;
-                foreach(var item in phase)
+                yield return null;elapsed+=Time.unscaledDeltaTime;
+                foreach(var motion in motions)
                 {
-                    float distance=Vector3.Distance(Position(item.Piece,item.From),Position(item.Piece,item.To))/CellPitch;
-                    if(item.Entry)entryLongest=Mathf.Max(entryLongest,distance);else longest=Mathf.Max(longest,distance);
+                    if(elapsed<motion.Start)continue;
+                    motion.PositionAt(elapsed,out float x,out float y);
+                    var move=step.Falls[motion.Piece];
+                    movingViews[motion.Piece].Root.localPosition=movingViews[motion.Piece].HomePosition+
+                        new Vector3(x-move.To.X,y-move.To.Y,0)*CellPitch;
                 }
-                // Keep the existing candies' speed when a longer offscreen queue joins them.
-                float duration=.32f+.060f*(longest>0?longest:entryLongest);
-                for(float elapsed=0f;elapsed<duration;)
-                {
-                    yield return null;elapsed+=Time.unscaledDeltaTime;
-                    float t=Mathf.SmoothStep(0f,1f,Mathf.Clamp01(elapsed/duration));
-                    foreach(var item in phase)movingViews[item.Piece].Root.localPosition=Vector3.Lerp(Position(item.Piece,item.From),Position(item.Piece,item.To),t);
-                }
-                foreach(var item in phase)movingViews[item.Piece].Root.localPosition=Position(item.Piece,item.To);
             }
             foreach(var view in movingViews)if(view!=null)view.Root.localPosition=view.HomePosition;
             foreach(var item in clipped)if(item.renderer!=null)item.renderer.SetPropertyBlock(item.saved);
@@ -1880,6 +1860,7 @@ namespace WorkshopMatch
             return $"bolt={target.CollectedBolts}/{target.TotalBolts},oil={target.TotalOil - target.RemainingOil}/{target.TotalOil},motor={target.MotorHits}/{target.MotorRequired},state={target.State}";
         }
 
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         private static void RunT02SelfTest()
         {
             Match3BoardModel first = new(BoardWidth, BoardHeight, Palette.Length, DefaultSeed, StartingMoves);
@@ -2242,6 +2223,8 @@ namespace WorkshopMatch
                         return true;
             return false;
         }
+
+#endif
 
         private void OnGUI()
         {
@@ -2612,11 +2595,11 @@ namespace WorkshopMatch
             GUI.color = previous;
         }
 
-        private float mapGestureStartedAt,mapGestureVertical;
         private int tutorialMapSwipes;
         private void UpdateMapDrag()
         {
-            if(homeLesson!=HomeLesson.Off&&homeLesson!=HomeLesson.SwipeMap)return;
+            if(settingsOpen||helpOpen||(homeLesson!=HomeLesson.Off&&homeLesson!=HomeLesson.SwipeMap))
+            {mapSwipe.Reset();mapPointerDown=mapDragging=false;return;}
             bool touchActive = Touchscreen.current != null &&
                 (Touchscreen.current.primaryTouch.press.isPressed || Touchscreen.current.primaryTouch.press.wasReleasedThisFrame);
             Vector2 position;
@@ -2642,27 +2625,30 @@ namespace WorkshopMatch
             if (pressed)
             {
                 mapPointerStart = mapPointerLast = position;
-                mapGestureStartedAt=Time.unscaledTime;mapGestureVertical=0;
-                mapPointerDown = true;
+                mapSwipe.Reset();
+                mapPointerDown = GetPortraitRect().Contains(position);
                 mapDragging = false;
             }
+            float threshold=TutorialPresentationRules.MapSwipeThreshold(GetPortraitRect().width);
+            bool completedSwipe=mapSwipe.Sample(position.y,pressed&&mapPointerDown,held,released,threshold);
             if (mapPointerDown && (held || released))
             {
-                if (Vector2.Distance(position, mapPointerStart) > Screen.width * 0.015f) mapDragging = true;
+                if (Vector2.Distance(position, mapPointerStart) >= threshold) mapDragging = true;
                 if (mapDragging)
                 {
                     float slope=(ReferenceWorldPoint(mapFocusLevel+.01f).y-ReferenceWorldPoint(mapFocusLevel).y)/.01f;
                     mapFocusLevel += (position.y - mapPointerLast.y) / Mathf.Max(1f,mapScrollPitch*slope);
                 }
-                mapGestureVertical=Mathf.Max(mapGestureVertical,Mathf.Abs(position.y-mapPointerStart.y));
                 mapPointerLast = position;
             }
             if (released)
             {
-                if (mapDragging){mapDragReleaseFrame = Time.frameCount;if(homeLesson==HomeLesson.SwipeMap&&TutorialPresentationRules.IsMeaningfulMapSwipe(mapGestureVertical,GetPortraitRect().height,Time.unscaledTime-mapGestureStartedAt)&&++tutorialMapSwipes>=2)SetHomeLesson(HomeLesson.Back);}
+                if (mapDragging) mapDragReleaseFrame = Time.frameCount;
+                if (completedSwipe&&homeLesson==HomeLesson.SwipeMap&&++tutorialMapSwipes>=2) SetHomeLesson(HomeLesson.Back);
                 mapPointerDown = false;
                 mapDragging = false;
             }
+            else if(!held&&!pressed){mapPointerDown=mapDragging=false;}
             mapFocusLevel = Mathf.Clamp(mapFocusLevel, 0, LevelRepository.PrototypeLevelIds.Length - 1);
         }
 

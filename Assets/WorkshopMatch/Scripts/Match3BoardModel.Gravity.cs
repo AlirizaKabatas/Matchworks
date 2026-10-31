@@ -63,6 +63,10 @@ namespace WorkshopMatch
                             break;
                         }
                     }
+                // Diagonal departures leave holes in their source columns. Drop
+                // the existing stack into those holes before creating any candy;
+                // otherwise a new piece would pass straight through that stack.
+                changed |= CompactGravityColumns(tracks,stage++);
                 changed |= FillGravitySources(tracks, spawnCounts, false,stage++);
                 if (!changed) break;
             }

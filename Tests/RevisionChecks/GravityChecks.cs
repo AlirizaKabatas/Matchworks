@@ -54,6 +54,13 @@ partial class Program
         Check(diagonal.Path!=null && board.GetSpecial(3,3)==SpecialKind.RayHorizontal && board.GetColor(3,3)==2,"diagonal supplies blocked pocket and preserves special/color");
         Check(board.HasOil(2,4) && !board.HasOil(3,3),"diagonal flow leaves ground oil in place");
         Check(board.GetContent(3,4)==CellContent.FrozenGrease,"diagonal flow preserves fixed blocker");
+        Check(falls.Any(f=>!f.Spawned&&f.From.Equals(new C(2,5))&&f.To.Equals(new C(2,4))),
+            "diagonal departure pulls the candy immediately above into its source cell");
+        Check(falls.Any(f=>!f.Spawned&&f.From.Equals(new C(2,6))&&f.To.Equals(new C(2,5)))&&
+            falls.Any(f=>!f.Spawned&&f.From.Equals(new C(2,7))&&f.To.Equals(new C(2,6))),
+            "entire source stack follows diagonal departure in its original order");
+        Check(falls.Where(f=>f.Spawned&&f.From.X==2).All(f=>f.To.Y==7),
+            "replacement enters at top of source stack instead of bypassing existing candies");
 
         var enclosed=Board();
         for(int x=0;x<8;x++)enclosed.PlaceObstacle(new C(x,4),CellContent.FrozenGrease,1);
@@ -79,7 +86,7 @@ partial class Program
             Check(af.All(f=>f.Path.Zip(f.Path.Skip(1),(from,to)=>to.Y<from.Y && (from.X==to.X || Math.Abs(from.X-to.X)==1&&from.Y-to.Y==1)).All(v=>v)),"gravity paths descend with one-cell diagonals "+seed);
             Check(af.All(f=>f.Path.Skip(1).All(c=>a.GetContent(c.X,c.Y)!=CellContent.FrozenGrease)),"gravity paths avoid blockers "+seed);
             Check(GravityStagesDoNotOverlap(af),"animation stages vacate destinations before entry "+seed);
-            Check(PlannedStagesDoNotOverlap(af,AnimationFrame(a)),"continuous top spawn schedule preserves occupancy "+seed);
+            Check(PlannedFallsDoNotOverlap(af),"continuous top spawn schedule preserves occupancy "+seed);
         }
     }
 }

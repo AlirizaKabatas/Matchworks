@@ -1,28 +1,32 @@
-# Matchworks — current state ·25 October 2026
+# Matchworks — current state · 31 October 2026
 
-The final game name is Matchworks; the source project folder keeps its original MechanicalCrush name. One gameplay scene loads20 JSON levels. Ali’s seeds, moves and obstacle positions were not changed by release cleanup.
+Current source version: **1.0.1**. The project folder retains its original MechanicalCrush name. One gameplay scene loads 20 authored 8×8 JSON levels. Ali owns the seeds, move counts and obstacle placements; this release does not change those authored values.
 
-Latest finished work: developer input routes and prototype stock grants removed; no runtime Keyboard/KeyCode/GetKey handlers remain. Toolbar nine-patch joins replaced by a single texture draw. New level8,7and4 screenshots and a1260×1000 cover are in the v2media package. Ali is arranging the itch.io page.
+The public repository is https://github.com/AlirizaKabatas/Matchworks . The browser game is at https://alikb.itch.io/matchworks . The source omits the standalone Pixabay opening MP3 under its redistribution terms; README and CREDITS explain how to restore it locally. Build ZIPs, Unity caches, logs and local delivery copies are excluded from Git.
 
-Assets went from~177 MiB to~155 MiB after reference-audited pruning. OrbitOrdas, unrelated props/car sources, temporary screenshots, obsolete resources and visual-only validation helpers were removed. Twelve dynamically constructed rust textures and catalog/model references were deliberately retained. Historical Docs/concepts/raw screenshot revisions were backed up outside the project before removal. Current Docs is~14 MiB including final media.
+## Implemented in 1.0.1
 
-Real verification:1,345 offline checks PASS; Editor/release source compilations: 0 errors, 0 warnings. Unity production WebGL build Succeeded,0 errors, 346 warnings (unused AI-inference shader variants/toolchain). Result `Build/Matchworks-WebGL-1.0.0.zip`,~134.5 MiB,17 files with index.html at root. Development/threads=false, gzip/fallback, responsive shell. ZIP and gzip signatures/integrity verified. No agent live gameplay test was performed at Ali’s request; browser/itch.io save/audio/runtime acceptance remains pending.
+- Mouse/touch drag swaps work in ordinary play and tutorials, alongside adjacent two-tap controls. One press cannot cause repeated swaps; existing validity, move-cost, tool and tutorial restrictions remain.
+- Map onboarding accepts two separate up/down drag-and-release gestures. A small width-scaled threshold filters tap jitter; no minimum hold time or long swipe is required. Original text and visuals are retained.
+- A diagonal departure is followed by vertical compaction of its source column before spawning. Existing candies fill their own vacancy in order; new candies cannot bypass that stack.
+- Independent refill routes move concurrently. Deterministic route-order retries avoid unnecessary staged handoffs, and visible straight/diagonal travel is checked against the normal movement pace. Ordinary vertical timing and SmoothStep remain unchanged. This fixes the reported placement-dependent hammer/firework acceleration around motors without forcing every refill into a short total duration.
+- Production builds exclude test stock grants, move adjustment, direct power/resolve helpers and prototype self-checks. No runtime developer keyboard routes or automatic prototype stock grants remain. Authored-level loading helpers and normal onboarding gifts remain.
 
-Music source recovered from original download metadata and confirmed by Ali: Stable Audio. Opening: ZoEdit Slow mouse wheel movement via Pixabay. Font: Cute Dino/Khurasan, with supporting Nunito/OFL source. CREDITS.md and ItchPageText.md contain actual attribution; no new credits screen was added.
+Detailed changes are in CHANGELOG.md. Historical experimental shortcuts and cancelled gravity experiments are not part of the release.
 
-GitHub: authenticated connector identifies AlirizaKabatas, but offers no repository-creation tool. Terminal has no existing GitHub credential; Chrome new-repository page shows Sign in. User approved a public repository. Do not claim repository creation/upload complete before a real URL/commit exists.
+## Verified results
 
-## Remaining decisions/actions
+- 1,520 offline regression checks pass, including ordinary vertical timing/easing, short diagonal/entry travel, input gestures, model determinism, spacing and gravity checks.
+- A level-8 audit covers 329 refill waves: 99 hammer, 113 vertical firework and 117 horizontal firework. All 129 mixed waves pass the short-leg pace checks without staged handoffs.
+- Release source compilation and Unity recompilation pass with zero errors/warnings. The actual stripped WebGL assembly excludes the development helpers and runtime Pipeline assemblies.
+- Production WebGL 1.0.1 builds successfully with zero errors and 354 Unity/package warnings: 353 shader warnings and one runtime-Pipeline-disabled notice. Development, debugging, profiler connection and threads are disabled; gzip/decompression fallback and the responsive shell are retained.
 
-Ali prioritizes showing the browser-playable page now. Upload new WebGL ZIP, finish explanatory copy and compact screenshots, then final browser test and CSS polish. GitHub source upload follows once sign-in is available. Do not resume cancelled Ğ/edge-flow experiments or developer keys. Do not silently alter saved player data for screenshots/tests.
+Upload package: `Build/Matchworks-WebGL-1.0.1.zip`, 140,999,479 bytes (~134.5 MiB), 17 files with `index.html` at the root. ZIP CRC, all three gzip streams, the Wasm header, relative URLs and version were checked. SHA-256: `91a1b27bc8b4f50845ba6ab6d8c47489d7578abb8a23bcaa44b6da26337df1cd`. The package is a local build artifact, not a tracked source file. Docs/ReleaseBuild.json contains the release report.
 
-Local Git initial source commit is now created. No remote GitHub repository exists yet; browser sign-in is still required. Extra unreferenced ButtonConcepts/FrameConcepts folders were removed after confirming zero GUID/path references; these were outside Resources and did not enter the completed WebGL build. Old generated reports and previous WebGL builds were removed; current Release/ZIP retained. CSS is an optional un-applied draft, not a verified live-site change.
+Ali tested the interaction/animation changes and requested the release build. No agent live gameplay/browser acceptance, retention measurement, A/B test or mobile-performance certification is claimed. The newer ZIP's itch.io upload and browser smoke test remain Ali's actions unless he reports them completed.
 
+## Local test state and remaining actions
 
-## 27 October 2026 — GitHub complete, page layout handoff
+The release preparation reset the Editor's known test level/onboarding/tool records to level 1 and zero stock after a local backup. Sound/language preferences and achievements were preserved. Editor preferences are not embedded in the WebGL package; no startup save-wipe was added and no existing browser save was changed.
 
-GitHub CLI was installed, the user personally authorized its device login, and the account was verified as AlirizaKabatas. Public repository https://github.com/AlirizaKabatas/Matchworks was created and the prepared main branch pushed successfully. The public source excludes the standalone Pixabay MP3, caches, logs and build ZIPs as documented in README. The earlier “GitHub sign-in pending” notes are superseded.
-
-Ali uploaded Matchworks-WebGL-1.0.0.zip to itch.io and published the page. No new agent gameplay/browser save/audio acceptance was performed. Ali liked the existing portfolio cover and asked to keep it. Read-only DOM inspection found a405×720game frame with background-size:auto, and six portrait screenshots stacked at500px each (~3050px gallery).
-
-Ali explicitly prefers to apply page changes himself. The theme editor was only opened; no theme/text inputs were changed or saved by the agent. Docs/ItchPageKit contains a1080×1920portrait embed poster using existing opening layers, unchanged approved cover, CSS scoped to the actual observed page classes (contain launch poster, two-column screenshots, matching cyan/cream/gold colors), balanced HTML description and exact field instructions. ZIP:Docs/Matchworks-Itch-Sayfa-Paketi.zip. Poster visually inspected; CSS not applied/tested on the live page. User preview and final browser smoke test remain. No new game build is needed for page-only changes.
+Ali handles the itch.io upload, browser audio/input/save checks and optional page-theme changes. Canonical page assets are in Docs/ItchPageKit; the duplicate Turkish delivery folder is local-only. Native store releases, ads, payments, new level placements and further experimental mechanics are outside this release.

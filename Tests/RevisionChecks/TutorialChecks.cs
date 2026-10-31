@@ -29,9 +29,7 @@ partial class Program
     }
     static void RunTutorialChecks()
     {
-        Check(!TutorialPresentationRules.IsMeaningfulMapSwipe(25,1200,.8f),"tiny map drag cannot finish tutorial");
-        Check(!TutorialPresentationRules.IsMeaningfulMapSwipe(300,1200,.1f),"brief accidental map flick cannot finish tutorial");
-        Check(TutorialPresentationRules.IsMeaningfulMapSwipe(240,1200,.5f),"deliberate substantial map swipe advances tutorial");
+        RunPointerGestureChecks();
         for(int lineCount=1;lineCount<=8;lineCount++)foreach(bool prompt in new[]{false,true})
         {
             float height=TutorialPresentationRules.PanelHeight(lineCount,prompt);

@@ -10,4 +10,4 @@ PlayerPrefs persist local progress/settings. WebGL stores browser-local data; Ed
 
 Runtime developer keyboard shortcuts and automatic prototype tool stock were removed for release preparation. Editor authoring/build tools remain. The production build helper sets Development=false, threads=false, gzip compression with fallback and a responsive HTML shell.
 
-Offline revision checks use Unity DLLs and .NET; csproj paths currently target the author’s local Unity installation. Unity Editor compilation is the portable source-of-truth build. Current final build is `Build/Matchworks-WebGL-1.0.0.zip`; build outputs are not committed.
+Offline revision checks use Unity DLLs and .NET; csproj paths currently target the author’s local Unity installation. Unity Editor compilation is the portable source-of-truth build. Current final build is `Build/Matchworks-WebGL-1.0.1.zip`; build outputs are not committed.

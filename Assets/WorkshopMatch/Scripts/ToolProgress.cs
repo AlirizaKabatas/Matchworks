@@ -111,6 +111,7 @@ namespace WorkshopMatch
 
         public int Target(ToolKind kind) => kind == ToolKind.Magnet ? MagnetTarget : 4;
 
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         public void EnsureMinimumStockForTesting(int minimum)
         {
             int amount = Math.Max(0, minimum);
@@ -128,6 +129,8 @@ namespace WorkshopMatch
             data.MagnetStock += amount;
             Changed?.Invoke(Snapshot);
         }
+
+#endif
 
         public void RecordProduced(SpecialKind special)
         {

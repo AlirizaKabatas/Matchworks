@@ -23,7 +23,6 @@ namespace WorkshopMatch
         private bool tutorialDirect,tutorialAdvancePending,tutorialOwnToolRevealed;
         private float tutorialHintAt;
         private Match3BoardModel.Cell tutorialFrom,tutorialTo,tutorialComboFirst,tutorialComboSecond;
-        private Match3BoardModel.Cell? tutorialDragStart;
         private readonly List<Match3BoardModel.Cell> tutorialLitCells=new();
         private readonly List<LessonStep> tutorialSteps=new();
         private readonly int[] tutorialTrialStock=new int[3];
@@ -78,7 +77,7 @@ namespace WorkshopMatch
         private void MarkTutorialCompleted(){if(tutorialLevel>=0&&tutorialLevel<10){PlayerPrefs.SetInt(TutorialDoneKey,PlayerPrefs.GetInt(TutorialDoneKey,0)|(1<<tutorialLevel));PlayerPrefs.Save();}}
         private void BeginTutorialPreview(bool replay=false)
         {
-            tutorialStage=TutorialStage.Off;tutorialDragStart=null;tutorialSteps.Clear();Array.Clear(tutorialTrialStock,0,3);
+            tutorialStage=TutorialStage.Off;boardPointer.Reset();tutorialSteps.Clear();Array.Clear(tutorialTrialStock,0,3);
             tutorialLevel=activeLevel==null?-1:Array.IndexOf(LevelRepository.PrototypeLevelIds,activeLevel.Id);
             tutorialOwnToolRevealed=false;tutorialStepIndex=0;tutorialAdvancePending=false;
             if(!tutorialPreviewEnabled||tutorialLevel<0||tutorialLevel>9)return;
@@ -128,7 +127,7 @@ namespace WorkshopMatch
         }
         private void EndTutorialPreview()
         {
-            tutorialStage=TutorialStage.Off;tutorialDragStart=null;tutorialOwnToolRevealed=true;Array.Clear(tutorialTrialStock,0,3);
+            tutorialStage=TutorialStage.Off;boardPointer.Reset();tutorialOwnToolRevealed=true;Array.Clear(tutorialTrialStock,0,3);
             activeTool=null;ClearSelection();ResetHintTimer();
         }
         private void AdvanceTutorialStep(){tutorialStepIndex++;EnterTutorialStep();}
@@ -136,7 +135,7 @@ namespace WorkshopMatch
         {
             if(CurrentLesson==null){MarkTutorialCompleted();EndTutorialPreview();return;}
             tutorialFadeAt=Mathf.Max(Time.unscaledTime,tutorialVisibleAt);
-            tutorialAdvancePending=false;tutorialDragStart=null;ClearSelection();tutorialLitCells.Clear();if(CurrentLesson.Action!=LessonAction.Rotate&&CurrentLesson.Action!=LessonAction.Place)activeTool=null;
+            tutorialAdvancePending=false;boardPointer.Reset();ClearSelection();tutorialLitCells.Clear();if(CurrentLesson.Action!=LessonAction.Rotate&&CurrentLesson.Action!=LessonAction.Place)activeTool=null;
             switch(CurrentLesson.Action)
             {
                 case LessonAction.Message:
@@ -202,13 +201,13 @@ namespace WorkshopMatch
                     foreach(var cell in result.Steps[0].HitTargets)if(!tutorialLitCells.Contains(cell)&&tutorialLitCells.Count<14)tutorialLitCells.Add(cell);
                 }
             }
-            tutorialStage=TutorialStage.Move;tutorialHintAt=Time.unscaledTime+.55f;tutorialDragStart=null;ClearSelection();ResetHintTimer();
+            tutorialStage=TutorialStage.Move;tutorialHintAt=Time.unscaledTime+.55f;boardPointer.Reset();ClearSelection();ResetHintTimer();
         }
         private void RecordTutorialMove(Match3BoardModel.SwapResult result)
         {
             if(!TutorialRunning||tutorialStage!=TutorialStage.Move||!result.Accepted)return;
             tutorialAdvancePending=CurrentLesson.Action!=LessonAction.Match||TutorialMovePlanner.Matches(result,CurrentLesson.Goal);
-            tutorialStage=TutorialStage.Feedback;tutorialDragStart=null;
+            tutorialStage=TutorialStage.Feedback;boardPointer.Reset();
         }
         private void RecordTutorialToolSelected(){if(TutorialRunning&&tutorialStage==TutorialStage.SelectTool)AdvanceTutorialStep();}
         private void RecordTutorialRotation(){if(TutorialRunning&&tutorialStage==TutorialStage.Rotate)AdvanceTutorialStep();}
@@ -226,22 +225,16 @@ namespace WorkshopMatch
             if(!TutorialRunning||tutorialStage==TutorialStage.ReplayPrompt||settingsOpen||Time.unscaledTime<tutorialFadeAt+TutorialPresentationRules.IntroFade)return;
             if(tutorialStage==TutorialStage.Feedback&&!resolving)
             {tutorialConsumedPointerFrame=Time.frameCount;if(tutorialAdvancePending)AdvanceTutorialStep();else PrepareTutorialMove();return;}
-            bool pressed=false,released=false;Vector2 pointer=Vector2.zero;
+            bool pressed=false;Vector2 pointer=Vector2.zero;
             if(Touchscreen.current!=null&&(Touchscreen.current.primaryTouch.press.isPressed||Touchscreen.current.primaryTouch.press.wasReleasedThisFrame))
-            {var touch=Touchscreen.current.primaryTouch;pointer=touch.position.ReadValue();pressed=touch.press.wasPressedThisFrame;released=touch.press.wasReleasedThisFrame;}
-            else if(Mouse.current!=null){pointer=Mouse.current.position.ReadValue();pressed=Mouse.current.leftButton.wasPressedThisFrame;released=Mouse.current.leftButton.wasReleasedThisFrame;}
+            {var touch=Touchscreen.current.primaryTouch;pointer=touch.position.ReadValue();pressed=touch.press.wasPressedThisFrame;}
+            else if(Mouse.current!=null){pointer=Mouse.current.position.ReadValue();pressed=Mouse.current.leftButton.wasPressedThisFrame;}
             pointer.y=Screen.height-pointer.y;Rect portrait=GetPortraitRect();
             if(pressed&&!GameplaySettingsButtonRect(portrait).Contains(pointer)&&(tutorialStage==TutorialStage.Message||tutorialStage==TutorialStage.Unlock||tutorialStage==TutorialStage.Outro)&&!LockedToolbarPointer(pointer))
             {if(Time.unscaledTime<tutorialGiftAt+2f&&IsTutorialGiftPanel)return;
                 tutorialConsumedPointerFrame=Time.frameCount;if(tutorialStage==TutorialStage.Outro){MarkTutorialCompleted();EndTutorialPreview();}else AdvanceTutorialStep();return;}
             if(tutorialStage!=TutorialStage.Move||resolving||hintAnimating||tutorialConsumedPointerFrame==Time.frameCount)return;
-            if(pressed)tutorialDragStart=TutorialCellRect(tutorialFrom).Contains(pointer)?tutorialFrom:TutorialCellRect(tutorialTo).Contains(pointer)?tutorialTo:(Match3BoardModel.Cell?)null;
-            if(released&&tutorialDragStart.HasValue)
-            {
-                var start=tutorialDragStart.Value;var end=start.Equals(tutorialFrom)?tutorialTo:tutorialFrom;tutorialDragStart=null;
-                if(TutorialCellRect(end).Contains(pointer)){ClearSelection();Select(start);HandleCellTap(end);return;}
-            }
-            if(!pressed&&!tutorialDragStart.HasValue&&selectedCell==null&&Time.unscaledTime>=tutorialHintAt)
+            if(!pressed&&!boardPointer.Tracking&&selectedCell==null&&Time.unscaledTime>=tutorialHintAt)
             {
                 tutorialHintAt=Time.unscaledTime+4.2f;
                 StartCoroutine(AnimateHint(tutorialFrom,tutorialTo));

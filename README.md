@@ -2,6 +2,8 @@
 
 A colorful Unity match-3 portfolio game set in a mechanical workshop.
 
+**Current source version:** 1.0.1 · [Release notes](CHANGELOG.md)
+
 **Play:** [alikb.itch.io/matchworks](https://alikb.itch.io/matchworks)
 
 ![Matchworks](Docs/ReleaseMedia/Screenshots/20261024/final-media-v2/00-cover-1260x1000.png)
@@ -42,6 +44,8 @@ Keep the included `.meta` file so its GUID stays stable. Unity imports the clip 
 
 In Unity choose **Workshop Match → Build → WebGL Production Draft**. This creates a non-development WebGL player with gzip compression and decompression fallback. Package the contents of the output folder so `index.html` is at the ZIP root; exclude debug-information folders. The existing editor menu name retains its original wording.
 
+Version 1.0.1 outputs to `Build/WebGL-Release-1.0.1/`. Build ZIPs are distributed separately and are not committed to this repository.
+
 ## Project layout
 
 - `Assets/WorkshopMatch/Scripts/`: board model, animation/presentation, saves and UI.
@@ -55,6 +59,6 @@ Library, build output, logs, temporary files and unrelated prototypes are exclud
 
 ## Validation and limits
 
-The release-preparation source passed 1,345 offline checks and both Editor/release C# compilation. The WebGL build completed with 0 errors; Unity AI inference shader variants/toolchain emitted warnings. Browser audio, save persistence and final itch.io behavior require a smoke test on the published build. Real mobile-device performance has not been certified.
+The 1.0.1 release source passed 1,520 offline checks and both Unity/release C# compilation. The production WebGL build completed with 0 errors and 354 Unity/package warnings (353 shader warnings and one notice that the runtime Pipeline is disabled). The upload package is `Build/Matchworks-WebGL-1.0.1.zip`. Browser audio, save persistence and final itch.io behavior require a smoke test on the published build. Real mobile-device performance has not been certified.
 
 See [CREDITS.md](CREDITS.md) for font, music and sound provenance. No blanket open-source license is granted for third-party assets; their original terms remain applicable. This repository is a portfolio/source project.

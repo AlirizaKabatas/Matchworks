@@ -35,6 +35,8 @@ Thumbs.db
 # Local or generated publication archives
 *.zip
 *.tar.gz
+# Local delivery copy; canonical page sources are tracked in Docs/ItchPageKit.
+/Docs/Matchworks-Itch-Sayfa-Paketi/
 # Credentials and local tooling
 .env
 .env.*
